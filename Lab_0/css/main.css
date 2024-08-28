@@ -5,18 +5,288 @@
     box-sizing: border-box;
 }
 
+/* MOBILE SIZE */
 
 /* Your CSS goes here  */
 
 body {
-    background-image: url(/images/bg.jpg), url(/images/grass.jpg);
+    /* background-image: url(/images/grass.jpg), url(/images/bg.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 20%, 100% 100%;
+    font-family: lato;
+    margin: 0;
+    padding: 0; */
 }
 
+header, nav {
+    color: white;
+}
 
+header h1 {
+    filter: drop-shadow(1px 2px 1px black);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
+header h2{
+    color: goldenrod;
+    filter: drop-shadow(1px 2px 1px black);
+    font-size: 1em;
+    text-transform: uppercase;
+}
 
+.header {
+    background-color: rgba(0,0,0,0.65);
+    padding: 1px;
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.homeLink {
+    text-decoration: overline;
+}
+
+nav li a:visited{
+    color: rgb(141, 202, 161);
+}
+
+nav li a{
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+figure img{
+    border-color: rgb(229, 194, 105);
+    border-radius: 1000px;
+    border-style: solid;
+    border-width: 4px;
+    display: block;
+    margin: auto;
+    height: 300px;
+}
+
+.intro {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.intro p {
+    color: rgb(0, 79, 0);
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: left;
+}
+
+hr {
+    background-color: darkgray;
+    border: none;
+    color: darkgray;
+    height: 1.5px;
+}
+
+.services {
+    background-color: rgba(222, 239, 214, 0.825);
+    border-radius: 10px 0px 10px 30px;
+    filter: drop-shadow(2px 2px 2px black);
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+
+}
+
+.services strong {
+    color: black;
+}
+
+.services li {
+    color: rgb(0, 79, 0);
+}
+
+.services ul {
+    text-align: left;
+}
+
+.contact {
+    background-color: rgba(21, 48, 0, 0.7);
+    color: wheat;
+    padding-top: 7px;
+}
+
+.contact h2 {
+    color: rgb(229, 194, 105);
+    filter: drop-shadow(1px 2px 1px black);
+}
+
+.contact h3 {
+    text-decoration: underline;
+}
+
+.contact img {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 40px;
+}
+
+main {
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(12, 54, 12);
+    color: wheat;
+    padding: 10px;
+    text-align: center;
+    font-size: .65em;
+}
+
+/* TABLET SIZE AND BIGGER */
 @media only screen and (min-width : 700px) {
 
+    body {
+        background-image: url(/images/grass.jpg), url(/images/bg.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100% 20%, 100% 100%;
+        font-family: lato;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header, nav {
+        color: white;
+    }
+    
+    header h1 {
+        filter: drop-shadow(1px 2px 1px black);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    header h2{
+        color: goldenrod;
+        filter: drop-shadow(1px 2px 1px black);
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    
+    .header {
+        background-color: rgba(0,0,0,0.65);
+        padding: 1px;
+        text-align: center;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .homeLink {
+        text-decoration: overline;
+    }
+    
+    nav li a:visited{
+        color: rgb(141, 202, 161);
+    }
+    
+    nav li a{
+        color: white;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    figure img{
+        border-color: rgb(229, 194, 105);
+        border-radius: 1000px;
+        border-style: solid;
+        border-width: 4px;
+        display: block;
+        margin: auto;
+        height: 300px;
+    }
+    
+    .intro {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .intro p {
+        color: rgb(0, 79, 0);
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: left;
+    }
+    
+    hr {
+        background-color: darkgray;
+        border: none;
+        color: darkgray;
+        height: 1.5px;
+    }
+    
+    .services {
+        background-color: rgba(222, 239, 214, 0.825);
+        border-radius: 10px 0px 10px 30px;
+        filter: drop-shadow(2px 2px 2px black);
+        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 10px;
+    
+    }
+    
+    .services strong {
+        color: black;
+    }
+    
+    .services li {
+        color: rgb(0, 79, 0);
+    }
+    
+    .services ul {
+        text-align: left;
+    }
+    
+    .contact {
+        background-color: rgba(21, 48, 0, 0.7);
+        color: wheat;
+        padding-top: 7px;
+    }
+    
+    .contact h2 {
+        color: rgb(229, 194, 105);
+        filter: drop-shadow(1px 2px 1px black);
+    }
+    
+    .contact h3 {
+        text-decoration: underline;
+    }
+    
+    .contact img {
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 40px;
+    }
+    
+    main {
+        text-align: center;
+    }
+    
+    footer {
+        background-color: rgb(12, 54, 12);
+        color: wheat;
+        padding: 10px;
+        text-align: center;
+        font-size: .65em;
+    }
 
 }
 
