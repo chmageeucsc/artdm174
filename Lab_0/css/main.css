@@ -1,0 +1,22 @@
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Patua+One);
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Your CSS goes here  */
+
+body {
+    background-color: black;
+}
+
+
+
+
+@media only screen and (min-width : 700px) {
+
+
+}
+
