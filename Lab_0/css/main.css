@@ -9,7 +9,7 @@
 /* Your CSS goes here  */
 
 body {
-    background-color: pink;
+    background-image: url(/images/bg.jpg), url(/images/grass.jpg);
 }
 
 
