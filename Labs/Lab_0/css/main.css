@@ -10,7 +10,7 @@
 /* Your CSS goes here  */
 
 body {
-    background-image: url(/images/grass.jpg), url(/images/bg.jpg);
+    background-image: url(/labs/lab_0/images/grass.jpg), url(/labs/lab_0/images/bg.jpg);
     background-repeat: no-repeat, no-repeat;
     background-size: 100% 21%, 100% 100%;
     font-family: lato;
@@ -161,7 +161,7 @@ footer {
 @media only screen and (min-width : 700px) {
 
     body {
-        background-image: url(/images/grass.jpg), url(/images/bg.jpg);
+        background-image: url(/labs/lab_0/images/grass.jpg), url(/labs/lab_0/images/bg.jpg);
         background-repeat: no-repeat, no-repeat;
         background-size: 100% 20%, 100% 100%;
         font-family: lato;
