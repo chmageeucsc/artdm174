@@ -51,9 +51,6 @@ nav ul{
 
 .homeLink {
     text-decoration: overline;
-}
-
-nav li a:visited{
     color: rgb(141, 202, 161);
 }
 
@@ -109,7 +106,7 @@ hr {
 
 }
 
-.services #break {
+.services .break {
     display: block;
 }
 
@@ -203,9 +200,6 @@ footer {
     
     .homeLink {
         text-decoration: overline;
-    }
-    
-    nav li a:visited{
         color: rgb(141, 202, 161);
     }
     
@@ -255,7 +249,7 @@ footer {
     
     }
 
-    .services #break {
+    .services .break {
         display: none;
     }
     
