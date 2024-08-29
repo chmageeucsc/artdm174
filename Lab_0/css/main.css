@@ -10,12 +10,12 @@
 /* Your CSS goes here  */
 
 body {
-    /* background-image: url(/images/grass.jpg), url(/images/bg.jpg);
+    background-image: url(/images/grass.jpg), url(/images/bg.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-size: 100% 20%, 100% 100%;
+    background-size: 100% 21%, 100% 100%;
     font-family: lato;
     margin: 0;
-    padding: 0; */
+    padding: 0;
 }
 
 header, nav {
@@ -25,6 +25,8 @@ header, nav {
 header h1 {
     filter: drop-shadow(1px 2px 1px black);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 header h2{
@@ -57,8 +59,12 @@ nav li a:visited{
 
 nav li a{
     color: white;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+figure {
+    padding-top: 40px;
 }
 
 figure img{
@@ -68,18 +74,19 @@ figure img{
     border-width: 4px;
     display: block;
     margin: auto;
-    height: 300px;
+    height: 200px;
 }
 
 .intro {
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 50px;
 }
 
 .intro p {
     color: rgb(0, 79, 0);
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: left;
 }
 
@@ -95,10 +102,15 @@ hr {
     border-radius: 10px 0px 10px 30px;
     filter: drop-shadow(2px 2px 2px black);
     margin-bottom: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    padding-right: 40px;
 
+}
+
+.services #break {
+    display: block;
 }
 
 .services strong {
@@ -107,6 +119,7 @@ hr {
 
 .services li {
     color: rgb(0, 79, 0);
+    padding-top: 20px;
 }
 
 .services ul {
@@ -240,6 +253,10 @@ footer {
         margin-right: 30px;
         padding: 10px;
     
+    }
+
+    .services #break {
+        display: none;
     }
     
     .services strong {
