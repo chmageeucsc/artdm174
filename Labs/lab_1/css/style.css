@@ -4,42 +4,130 @@
   Date: 09.3.2024
 */
 
-body {
-  margin: 0;
-  padding: 0;
+/* MOBILE SIZE */
+@media only screen and (max-width : 700px) {
+
+  body {
+    background-color: rgb(26, 22, 35);
+    margin: 0;
+    padding: 0;
+  }
+
+  .logoTitle {
+    align-items: center;
+    background-color: rgb(224, 234, 238);
+    color: rgb(4, 70, 156);
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 5%;
+  }
+
+  .logoTitle figure {
+    margin: 0;
+    padding-right: 5%;
+  }
+
+  nav {
+    background-color: rgb(113, 220, 184);
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-around;
+    padding: 2% 0;
+  }
+
+  nav a {
+    color: rgb(7, 84, 25);
+    text-decoration: none;
+  }
+
+  .grid {
+    box-sizing: border-box;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;  
+  }
+
+  .grid img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .grid .mainText {
+    color: rgb(220, 215, 204);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    padding: 5%;
+  }
+
+  .grid h2 {
+    color: rgb(227, 202, 169);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
 }
 
-.logoTitle {
-  align-items: center;
-  display: flex;
-}
+/* TABLET SIZE AND BIGGER */
+@media only screen and (min-width : 700px) {
 
-.logoTitle figure {
-  margin: 0;
-  padding-right: 5%;
-}
+  body {
+    background-color: rgb(26, 22, 35);
+    margin: 0;
+    padding: 0;
+  }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 2%;
-}
+  .logoTitle {
+    align-items: center;
+    background-color: rgb(224, 234, 238);
+    color: rgb(4, 70, 156);
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 1%;
+  }
 
-.grid {
-  box-sizing: border-box;
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1.25fr 1fr 1.25fr;  
-}
+  .logoTitle figure {
+    margin: 0;
+    padding-right: 5%;
+  }
 
-.grid img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-}
+  nav {
+    background-color: rgb(113, 220, 184);
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-around;
+    padding: 2% 0;
+  }
 
-.grid .mainText {
-  grid-column: 2 / span 2;
-  grid-row: 2;
+  nav a {
+    color: rgb(7, 84, 25);
+    text-decoration: none;
+  }
+  
+  .grid {
+    box-sizing: border-box;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;  
+  }
+  
+  .grid img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .grid .mainText {
+    color: rgb(220, 215, 204);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    padding: 3%;
+  }
+
+  .grid h2 {
+    color: rgb(227, 202, 169);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
 }
