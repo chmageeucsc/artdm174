@@ -31,8 +31,8 @@
     background-color: rgb(113, 220, 184);
     display: flex;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    justify-content: space-around;
-    padding: 2% 0;
+    justify-content: space-between;
+    padding: 3% 3%;
   }
 
   nav a {
@@ -95,8 +95,8 @@
     background-color: rgb(113, 220, 184);
     display: flex;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    justify-content: space-around;
-    padding: 2% 0;
+    justify-content: space-between;
+    padding: 2% 1%;
   }
 
   nav a {
