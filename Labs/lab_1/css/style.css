@@ -1,0 +1,45 @@
+/*<!--
+  Student Name: Chantel Gee
+  Assignment Name: Lab 1 : CSS Layout with Flexbox and Grid
+  Date: 09.3.2024
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logoTitle {
+  align-items: center;
+  display: flex;
+}
+
+.logoTitle figure {
+  margin: 0;
+  padding-right: 5%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2%;
+}
+
+.grid {
+  box-sizing: border-box;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1.25fr 1fr 1.25fr;  
+}
+
+.grid img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.grid .mainText {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+}
