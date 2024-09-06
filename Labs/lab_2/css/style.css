@@ -1,0 +1,87 @@
+/*<!--
+  https://www.mlc-music.com/
+
+  Student Name: Chantel Gee
+  Assignment Name: Lab 2 : CSS Transitions and Animation
+  Date: 09.05.2024
+*/
+
+/* MOBILE SIZE */
+@media only screen and (max-width : 700px) {
+
+  body {
+    background-color: rgb(26, 22, 35);
+    background-image: url(https://images.unsplash.com/photo-1579267217516-b73084bd79a6?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logoTitle {
+    align-items: center;
+    background-color: rgba(224, 234, 238, .75);
+    color: rgb(7, 27, 107);
+    display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    padding-right: 1%;
+  }
+
+  .logoTitle figure {
+    margin: 0;
+    padding-right: 5%;
+  }
+
+  nav {
+    background-color: rgb(145, 200, 213);
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-between;
+    padding: 2% 1%;
+  }
+
+  nav a {
+    color: rgb(7, 84, 25);
+    text-decoration: none;
+  }
+}
+
+/* TABLET SIZE AND BIGGER */
+@media only screen and (min-width : 700px) {
+
+  body {
+    background-color: rgb(26, 22, 35);
+    background-image: url(https://images.unsplash.com/photo-1579267217516-b73084bd79a6?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logoTitle {
+    align-items: center;
+    background-color: rgba(224, 234, 238, .75);
+    color: rgb(7, 27, 107);
+    display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    padding-right: 1%;
+  }
+
+  .logoTitle figure {
+    margin: 0;
+    padding-right: 5%;
+  }
+
+  nav {
+    background-color: rgb(145, 200, 213);
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-between;
+    padding: 2% 1%;
+  }
+
+  nav a {
+    color: rgb(23, 18, 153);
+    text-decoration: none;
+  }
+}
