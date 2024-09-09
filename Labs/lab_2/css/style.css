@@ -37,12 +37,44 @@
     display: flex;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: space-between;
-    padding: 2% 1%;
+    padding: 2% 5%;
   }
 
   nav a {
-    color: rgb(7, 84, 25);
+    color: rgb(23, 18, 153);
     text-decoration: none;
+  }
+
+  main {
+    color: aliceblue;
+    font-family:'Times New Roman', Times, serif;
+    margin: 10%;
+    text-align: center;
+  }
+
+  main h1 {
+    font-size: 2.5em;
+  }
+
+  main h3 {
+    background-color: rgb(87, 24, 189);
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: .9em;
+    padding: 17px;
+  }
+
+  main h4 {
+    color: rgb(225, 182, 229);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .85em;
+    text-transform: uppercase;
+  }
+
+  main p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.25em;
+    margin-bottom: 50px;
   }
 }
 
@@ -67,6 +99,27 @@
     padding-right: 1%;
   }
 
+  @keyframes colors {
+    0% {
+      color: rgb(7, 27, 107);
+      font-size: 120%;
+    }
+    50%{
+      color: blue;
+    }
+    75% {
+      color: #527aff;
+    }
+    100% {
+      color: rgb(4, 35, 156);
+    }
+  }
+
+  .logoTitle h1 {
+    animation: colors 2s ease;
+    animation-delay: 1s;
+  }
+
   .logoTitle figure {
     margin: 0;
     padding-right: 5%;
@@ -77,11 +130,71 @@
     display: flex;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: space-between;
-    padding: 2% 1%;
+    padding: 2% 5%;
   }
 
   nav a {
     color: rgb(23, 18, 153);
+    padding: 1%;
+    text-decoration: underline;
+    transition: all 1s ease;
+  }
+
+  nav a:hover {
+    background-color: rgb(195, 219, 240);
+    padding: 1%;
+    text-decoration: overline;
+    transition: all 1s ease;
+  }
+
+  main {
+    color: aliceblue;
+    font-family:'Times New Roman', Times, serif;
+    margin: 10%;
+    text-align: center;
+  }
+
+  main h1 {
+    font-size: 3.5em;
+  }
+
+  main h3 {
+    background: linear-gradient(to left, rgb(87, 24, 189) 50%, white 50%) right;
+    background-size: 200%;
+  }
+
+  main h3, h3 a {
+    /* background-color: rgb(87, 24, 189); */
+    color: white;
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: .9em;
+    padding: 17px;
     text-decoration: none;
+    transition: .5s ease-out;
+  }
+
+  main h3:hover {
+    background-position: left;
+    border-radius: 7px;
+  }
+
+  h3 a:hover {
+    color: rgb(64, 52, 236);
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  main h4 {
+    color: rgb(225, 182, 229);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .85em;
+    text-transform: uppercase;
+  }
+
+  main p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.25em;
+    margin-bottom: 50px;
   }
 }
