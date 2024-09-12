@@ -15,8 +15,11 @@ body {
 
 /*the following rule makes the header text blue, changes the font to Georgia, and centers the text*/
 header {
+  align-items: center;
   color: rgb(33, 77, 172);
+  display: flex;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  justify-content: left;
   margin: 0 auto;
   text-align: center;
 }
@@ -24,6 +27,10 @@ header {
 /*the following rule makes the header h1 text red*/
 header h1 {
   color: rgb(139, 0, 0);
+}
+
+header img {
+  border-radius: 50%;
 }
 
 /*the following rule will make the items purple and uppercase and changes the font to Gill Sans*/
