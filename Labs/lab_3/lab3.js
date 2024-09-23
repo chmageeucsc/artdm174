@@ -5,6 +5,14 @@ function position(event) {
   document.getElementById("Y").value = y;
 }
 
-window.addEventListener('load',function(){
+var dot = document.getElementById('dot');
+  document.body.addEventListener('click', (e) => {
+    dot.style.transform = `translateY(${e.clientY - 100}px)`;
+    dot.style.transform += `translateX(${e.clientX - 25}px)`;
+    dot.style.opacity = 1;
+    console.log("Current position of ball is X: " + e.clientX + ", Y: " + e.clientY)
+  }, false);
+
+// window.addEventListener('load',function(){
   
-});
+// });
