@@ -1,21 +1,116 @@
 body {
-  background-color: rgb(30, 29, 29);
+  background-color: rgb(33, 8, 8);
   height:100vh;
   margin:0;
 }
 
 .ball {
-  border-radius: 50%;
+  border: 3px solid rgb(237, 166, 166);
+  border-radius: 0 50% 50% 50%;
   width: 50px;
   height: 50px;
   background: rgb(161, 28, 28);
   opacity: 0;
+  position: relative;
   transition: transform 1s;
+  z-index: 1;
 }
 
-p {
-  margin-top: 10rem;
+header {
+  align-items: center;
+  background-color: rgb(30, 29, 29);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  /* background-color: white; */
+  color: rgb(184, 168, 168);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.3em;
+  margin: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: rgb(197, 42, 42);
+}
+
+img {
+  margin-top: 5px;
+  width: 50px;
+}
+
+main {
+  margin: 85px 50px 0px;
   text-align: center;
-  font: bold 2rem sans-serif;
 }
 
+main h1 {
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3em;
+}
+main p {
+  color: rgb(178, 167, 167);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: -15px;
+}
+
+#xy {
+  color: rgb(184, 168, 168);
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 400px;
+}
+
+input {
+  background-color: rgb(237, 200, 196);
+  border: thick double red;
+  height: 50px;
+  font-size: 1.2em;
+  margin: 0 auto 45px;
+  width: 100px;
+}
+
+/* photo gallery portion */
+.slider {
+  align-items: center;
+  display: flex;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%
+}
+
+/* previous and next buttons */
+.slider button {
+  background-color: rgb(237, 200, 196);
+  border: thick solid rgb(156, 79, 79);
+  height: 150px;
+  margin: 0 20px;
+  width: 45px;
+}
+
+.slider div img {
+  display: none;
+  width: 100%;
+}
+
+/* animation and display for images */
+.slider div img.displaySlide {
+  display: block;
+  animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

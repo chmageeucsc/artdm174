@@ -5,7 +5,7 @@
 
 Student Name: Chantel Gee
 Assignment Name: Lab 3: Mouse Events
-Date: 09.17.2024
+Date: 09.24.2024
 
 --> 
 
@@ -21,18 +21,52 @@ Date: 09.17.2024
 
 <body onmousemove="position(event)">
 	<header>
+		<nav>
+			<a href="#">Wolf</a>
+			<a href="#">Rabbit</a>
+			<a href="#">Pig Rabbit</a>
+			<a href="#">Ferret</a>
+		</nav>
+		<figure>
+			<img src="https://preview.redd.it/7rl60zp63xp81.png?width=485&format=png&auto=webp&s=ed8e96e04ee652b3bc4acb03fa71c529d210d87b" alt="red compass">
+		</figure>
+		<nav>
+			<a href="#">Quokka</a>
+			<a href="#">Chick</a>
+			<a href="#">Puppy</a>
+			<a href="#">Fox</a>
+		</nav>
 	</header>
 
 	<main>
-    <h1>WELCOME</h1>
+    <h1>WELCOME!</h1>
+		<p>(Please check console log for more information.)</p>
 		
 		<div id="dot" class="ball"></div>
-		<p>Click anywhere</p>
 
-		<h2>The X-coordinate is: </h2>
-		<input type="button" id="X">
-		<h2>The Y-coordinate is: </h2>
-		<input type="button" id="Y">
+		<div id="xy">
+			<h2>The X-coordinate is: </h2>
+			<h2>The Y-coordinate is: </h2>
+			<input type="button" id="X" value="0">
+			<input type="button" id="Y" value="0">
+		</div>
+		
+		<div class="slider">
+			<button class="prev" onclick="prevSlide()">&#10094;</button>
+			
+			<div class="slides">
+				<img class="slide current" src="images/ph1.jpg" alt="wolf photo">
+				<img class="slide" src="images/ph2.jpg" alt="rabbit photo">
+				<img class="slide" src="images/ph3.jpg" alt="pig rabbit photo">
+				<img class="slide" src="images/ph4.jpg" alt="ferret photo">
+				<img class="slide" src="images/ph5.jpg" alt="quokka photo">
+				<img class="slide" src="images/ph6.jpg" alt="chick photo">
+				<img class="slide" src="images/ph7.jpg" alt="puppy photo">
+				<img class="slide" src="images/ph8.jpg" alt="fox photo">
+			</div>
+		
+			<button class="next" onclick="nextSlide()">&#10095;</button>
+		</div>
 	</main>
 	
 	<script src="lab3.js"></script>
