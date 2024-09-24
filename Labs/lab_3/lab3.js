@@ -9,7 +9,7 @@ function position(event) {
 // when pointer clicks within body, dot/ball moves to new position and outputs in the console log
 var dot = document.getElementById('dot');
   document.body.addEventListener('click', (e) => {
-    dot.style.transform = `translateY(${e.clientY - 323}px)`;
+    dot.style.transform = `translateY(${e.clientY - 280}px)`;
     dot.style.transform += `translateX(${e.clientX - 49}px)`;
     dot.style.opacity = 1;
     console.log("Current position of ball is X: " + e.clientX + ", Y: " + e.clientY);
