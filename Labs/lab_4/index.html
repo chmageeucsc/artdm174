@@ -22,19 +22,60 @@ Date: 10.01.2024
   <main>
     <h1>Photo Gallery</h1>
 
-    <div class="slides">
-      <img class="slide current" src="images/blue1.jpg" alt="blue hour photo 1">
-      <img class="slide" src="images/blue2.jpg" alt="blue hour photo 2">
-      <img class="slide" src="images/blue3.jpg" alt="blue hour photo 3">
-      <img class="slide" src="images/gold1.jpg" alt="golden hour photo 1">
-      <img class="slide" src="images/gold2.jpeg" alt="golden hour photo 2">
-      <img class="slide" src="images/gold3.jpg" alt="golden hour photo 3">
-      <img class="slide" src="images/night1.jpg" alt="nighttime photo 1">
-      <img class="slide" src="images/night2.jpg" alt="nighttime photo 2">
-      <img class="slide" src="images/night3.jpg" alt="nighttime photo 3">
-      <img class="slide" src="images/rain1.jpg" alt="rainy day photo 1">
-      <img class="slide" src="images/rain2.jpg" alt="rainy day photo 2">
-      <img class="slide" src="images/rain3.jpg" alt="rainy day photo 3">
+    <!-- The grid: four columns -->
+    <div class="grid row">
+      <div class="column">
+        <img src="images/blue1.jpg" alt="blue" onclick="exImg(this);">
+      </div>
+      <div class="column">
+        <img src="images/gold1.jpg" alt="gold" onclick="exImg(this);">
+      </div>
+      <div class="column">
+        <img src="images/night1.jpg" alt="night" onclick="exImg(this);">
+      </div>
+      <div class="column">
+        <img src="images/rain1.jpg" alt="rain" onclick="exImg(this);">
+      </div>
+    <!-- </div> -->
+    <!-- <div class="grid row"> -->
+      <div class="column">
+        <img src="images/blue2.jpg" alt="blue" onclick="exImg(this);">
+      </div>
+      <div class="column">
+        <img src="images/gold2.jpeg" alt="gold" onclick="exImg(this);">
+      </div>
+      <div class="column">
+        <img src="images/night2.jpg" alt="night" onclick="exImg(this);">
+      </div>
+      <div class="column">
+        <img src="images/rain2.jpg" alt="rain" onclick="exImg(this);">
+      </div>
+    <!-- </div> -->
+    <!-- <div class="grid row"> -->
+      <div class="column">
+        <img src="images/blue3.jpg" alt="blue" onclick="exImg(this);">
+      </div>
+      <div class="column">
+        <img src="images/gold3.jpg" alt="gold" onclick="exImg(this);">
+      </div>
+      <div class="column">
+        <img src="images/night3.jpg" alt="night" onclick="exImg(this);">
+      </div>
+      <div class="column">
+        <img src="images/rain3.jpg" alt="rain" onclick="exImg(this);">
+      </div>
+    </div>
+
+    <!-- The expanding image container -->
+    <div class="container">
+      <!-- Close the image -->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+      <!-- Expanded image -->
+      <img id="expandedImg" style="width:100%">
+
+      <!-- Image text -->
+      <div id="imgtext"></div>
     </div>
   </main>
 
