@@ -82,10 +82,11 @@ function changeSlide(e) {
   let nextUp = "";
 
   // check which button was pressed DESKTOP and MOBILE
-  if(e.target.className == "prev" || "prevMobile") {
+  if(e.target.className == "prev" || e.target.className == "prevMobile") {
     nextUp = showing.previousElementSibling;
+    clearInterval(interval_ID);
   }
-  if(e.target.className == "next" || "nextMobile") {
+  if(e.target.className == "next" || e.target.className == "nextMobile") {
     nextUp = showing.nextElementSibling;
   }
 
