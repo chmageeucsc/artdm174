@@ -90,7 +90,7 @@ Date: 10.04.2024 */
     max-width: 1000px;
   }
 
-  .hide, .wJS, .prev, .next, .prevMobile, .nextMobile {
+  .hide, .wJS, .prev, .next, .prevMobile, .nextMobile, .mobile {
     display: none;
   }
 
@@ -146,6 +146,7 @@ Date: 10.04.2024 */
 
   h2 {
     color: whitesmoke;
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -191,7 +192,7 @@ Date: 10.04.2024 */
     max-width: 1000px;
   }
 
-  .hide, .prev, .next, .wJS, .prevMobile, .nextMobile {
+  .hide, .prev, .next, .wJS, .prevMobile, .nextMobile, .desktop {
     display: none;
   }
 
