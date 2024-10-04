@@ -2,66 +2,119 @@
 Assignment Name: Lab 4: Changing the DOM
 Date: 10.01.2024 */
 
-.grid {
-  box-sizing: border-box;
-  display: grid;
-  gap: 8px;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;  
+/* TABLET SIZE AND BIGGER */
+@media only screen and (min-width : 700px) {
+
+  /* all images are the same size without distorting */
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .grid {
+    box-sizing: border-box;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;  
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  /* photo gallery portion */
+  .slider {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+  }
+
+  figcaption {
+    background-color: rgb(92, 89, 105);
+    color: white;
+    padding: 1%;
+    text-align: center;
+  }
+
+  /* previous and next buttons*/
+  .slider button {
+    background-color: rgb(156, 153, 169);
+    border: none;
+    height: 500px;
+    margin: 0 20px;
+    width: 200px;
+  } 
+
+  .slide {
+    max-height: 700px;
+    max-width: 1000px;
+  }
+
+  .hide, .prev, .next, .wJS, .prevMobile {
+    display: none;
+  }
 }
 
-/* all images are the same size without distorting */
-img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-}
+/* MOBILE SIZE */
+@media only screen and (max-width : 699px) {
+  /* all images are the same size without distorting */
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
 
-/* The grid: Four equal columns that floats next to each other */
-.column {
-  float: left;
-  /* width: 25%; */
-  /* padding: 10px; */
-}
+  .grid {
+    box-sizing: border-box;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;  
+  }
 
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8;
-  cursor: pointer;
-}
+  h2 {
+    text-align: center;
+  }
 
-.column img:hover {
-  opacity: 1;
-}
+  /* photo gallery portion */
+  .slider {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+  }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  figcaption {
+    background-color: rgb(92, 89, 105);
+    color: white;
+    padding: 1%;
+    text-align: center;
+  }
 
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
-  position: relative;
-  display: none;
-}
+  /* previous and next buttons*/
+  .slider button {
+    background-color: rgb(156, 153, 169);
+    border: none;
+    height: 500px;
+    margin: 0 20px;
+    width: 200px;
+  } 
 
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
+  .slide {
+    max-height: 700px;
+    max-width: 1000px;
+  }
 
-/* Closable button inside the image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
+  .hide, .prev, .next, .wJS, .prevMobile {
+    display: none;
+  }
 }

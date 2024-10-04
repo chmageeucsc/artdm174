@@ -2,7 +2,7 @@
 
 Student Name: Chantel Gee
 Assignment Name: Lab 4: Changing the DOM
-Date: 10.01.2024
+Date: 10.03.2024
 
 --> 
 
@@ -18,65 +18,66 @@ Date: 10.01.2024
 </head>
 
 <body>
+  <header>
+		<div class="headerNav">
+			<div class="title">
+				<h1>Aesthetic Void</h1>
+			</div>
+			<nav>
+				<a href="#">Blue</a>
+				<a href="#">Gold</a>
+				<a href="#">Night</a>
+				<a href="#">Rain</a>
+			</nav>
+		</div>
+	</header>
 
-  <main>
-    <h1>Photo Gallery</h1>
+  <main>    
+		<h2>Different Aesthetics All in One Place</h2>
+		
+		<!-- css no js -->
+    <div class="slider">
+			<div class="grid">
+				<img class="" src="images/blue1.jpg" alt="blue hour 1">
+				<img class="" src="images/blue2.jpg" alt="blue hour 2">
+				<img class="" src="images/blue3.jpg" alt="blue hour 3">
+				<img class="" src="images/gold1.jpg" alt="golden hour 1">
+				<img class="" src="images/gold2.jpeg" alt="golden hour 2">
+				<img class="" src="images/gold3.jpg" alt="golden hour 3">
+				<img class="" src="images/night1.jpg" alt="nighttime 1">
+				<img class="" src="images/night2.jpg" alt="nighttime 2">
+				<img class="" src="images/night3.jpg" alt="nighttime 3">
+				<img class="" src="images/rain1.jpg" alt="rainy day 1">
+				<img class="" src="images/rain2.jpg" alt="rainy day 2">
+				<img class="" src="images/rain3.jpg" alt="rainy day 3">
+			</div>
+		</div>
 
-    <!-- The grid: four columns -->
-    <div class="grid row">
-      <div class="column">
-        <img src="images/blue1.jpg" alt="blue" onclick="exImg(this);">
-      </div>
-      <div class="column">
-        <img src="images/gold1.jpg" alt="gold" onclick="exImg(this);">
-      </div>
-      <div class="column">
-        <img src="images/night1.jpg" alt="night" onclick="exImg(this);">
-      </div>
-      <div class="column">
-        <img src="images/rain1.jpg" alt="rain" onclick="exImg(this);">
-      </div>
-    <!-- </div> -->
-    <!-- <div class="grid row"> -->
-      <div class="column">
-        <img src="images/blue2.jpg" alt="blue" onclick="exImg(this);">
-      </div>
-      <div class="column">
-        <img src="images/gold2.jpeg" alt="gold" onclick="exImg(this);">
-      </div>
-      <div class="column">
-        <img src="images/night2.jpg" alt="night" onclick="exImg(this);">
-      </div>
-      <div class="column">
-        <img src="images/rain2.jpg" alt="rain" onclick="exImg(this);">
-      </div>
-    <!-- </div> -->
-    <!-- <div class="grid row"> -->
-      <div class="column">
-        <img src="images/blue3.jpg" alt="blue" onclick="exImg(this);">
-      </div>
-      <div class="column">
-        <img src="images/gold3.jpg" alt="gold" onclick="exImg(this);">
-      </div>
-      <div class="column">
-        <img src="images/night3.jpg" alt="night" onclick="exImg(this);">
-      </div>
-      <div class="column">
-        <img src="images/rain3.jpg" alt="rain" onclick="exImg(this);">
-      </div>
-    </div>
+		<!-- photos w js -->
+		<div class="slider">
+			<button class="prev">&#10094;</button>
+			<div class="slides wJS">
+				<img class="slide current" src="images/blue1.jpg" alt="blue hour 1">
+				<img class="slide" src="images/blue2.jpg" alt="blue hour 2">
+				<img class="slide" src="images/blue3.jpg" alt="blue hour 3">
+				<img class="slide" src="images/gold1.jpg" alt="golden hour 1">
+				<img class="slide" src="images/gold2.jpeg" alt="golden hour 2">
+				<img class="slide" src="images/gold3.jpg" alt="golden hour 3">
+				<img class="slide" src="images/night1.jpg" alt="nighttime 1">
+				<img class="slide" src="images/night2.jpg" alt="nighttime 2">
+				<img class="slide" src="images/night3.jpg" alt="nighttime 3">
+				<img class="slide" src="images/rain1.jpg" alt="rainy day 1">
+				<img class="slide" src="images/rain2.jpg" alt="rainy day 2">
+				<img class="slide" src="images/rain3.jpg" alt="rainy day 3">
+				<figcaption>blue hour 1</figcaption>
+			</div>
+			<button class="prevMobile">&#10094;</button>
+			<button class="next">&#10095;</button>
+		</div>
 
-    <!-- The expanding image container -->
-    <div class="container">
-      <!-- Close the image -->
-      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-      <!-- Expanded image -->
-      <img id="expandedImg" style="width:100%">
-
-      <!-- Image text -->
-      <div id="imgtext"></div>
-    </div>
+		<footer>
+			<p>The purpose of this lab is to practice DOM methods and create a progressively enhanced image display. </p>
+		</footer>
   </main>
 
   <script src="lab4.js"></script>
