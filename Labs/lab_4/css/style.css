@@ -11,12 +11,12 @@ Date: 10.04.2024 */
 @media only screen and (min-width : 700px) {
 
   body {
-    background-color: rgb(32, 20, 36);
+    background-color: rgb(15, 17, 45);
     margin: 0;
   }
 
   .title {
-    background-color: rgb(24, 22, 54);
+    background-color: rgb(10, 9, 29);
     color: white;
     font-family: badSignal;
     font-size: 1.5rem;
@@ -24,7 +24,7 @@ Date: 10.04.2024 */
   }
   
   nav, a {
-    background-color: rgb(66, 58, 81);
+    background-color: rgb(37, 43, 73);
     color: white;
     display: flex;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -54,6 +54,7 @@ Date: 10.04.2024 */
   }
 
   h2 {
+    color: whitesmoke;
     text-align: center;
   }
 
@@ -92,10 +93,42 @@ Date: 10.04.2024 */
   .hide, .wJS, .prev, .next, .prevMobile, .nextMobile {
     display: none;
   }
+
+  footer {
+    background-color: black;
+    color: whitesmoke;
+    margin-top: 5%;
+    padding: 20px;
+    text-align: center;
+  }
 }
 
 /* MOBILE SIZE */
 @media only screen and (max-width : 699px) {
+
+  body {
+    background-color: rgb(15, 17, 45);
+    margin: 0;
+  }
+
+  .title {
+    background-color: rgb(10, 9, 29);
+    color: white;
+    font-family: badSignal;
+    padding: 10px 40px;
+  }
+  
+  nav, a {
+    background-color: rgb(37, 43, 73);
+    color: white;
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: space-around;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
   /* all images are the same size without distorting */
   img {
     height: 100%;
@@ -112,6 +145,7 @@ Date: 10.04.2024 */
   }
 
   h2 {
+    color: whitesmoke;
     text-align: center;
   }
 
@@ -145,11 +179,11 @@ Date: 10.04.2024 */
     width: 60%;
   } 
   .prevMobile {
-    background-color: rgb(161, 177, 200);
+    background-color: rgb(70, 102, 145);
   }
 
   .nextMobile {
-    background-color: rgb(186, 181, 208);
+    background-color: rgb(70, 78, 145);
   }
 
   .slide {
@@ -159,5 +193,13 @@ Date: 10.04.2024 */
 
   .hide, .prev, .next, .wJS, .prevMobile, .nextMobile {
     display: none;
+  }
+
+  footer {
+    background-color: black;
+    color: whitesmoke;
+    margin-top: 5%;
+    padding: 20px;
+    text-align: center;
   }
 }
