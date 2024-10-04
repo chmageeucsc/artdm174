@@ -1,6 +1,6 @@
 // Student Name: Chantel Gee
 // Assignment Name: Lab 4: Changing the DOM
-// Date: 10.03.2024
+// Date: 10.04.2024
 
 document.addEventListener("DOMContentLoaded", initSlider);
 document.querySelector(".grid").style.display = "none";

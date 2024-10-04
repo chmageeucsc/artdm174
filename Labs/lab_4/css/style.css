@@ -1,9 +1,42 @@
 /* Student Name: Chantel Gee
 Assignment Name: Lab 4: Changing the DOM
-Date: 10.01.2024 */
+Date: 10.04.2024 */
+
+@font-face {
+  font-family: badSignal; 
+  src: url(badSignal.otf); 
+}
 
 /* TABLET SIZE AND BIGGER */
 @media only screen and (min-width : 700px) {
+
+  body {
+    background-color: rgb(32, 20, 36);
+    margin: 0;
+  }
+
+  .title {
+    background-color: rgb(24, 22, 54);
+    color: white;
+    font-family: badSignal;
+    font-size: 1.5rem;
+    padding: 10px 40px;
+  }
+  
+  nav, a {
+    background-color: rgb(66, 58, 81);
+    color: white;
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: space-around;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(59, 144, 230);
+  }
 
   /* all images are the same size without distorting */
   img {
@@ -44,7 +77,7 @@ Date: 10.01.2024 */
 
   /* previous and next buttons*/
   .slider button {
-    background-color: rgb(161, 177, 200);
+    background-color: rgb(70, 102, 145);
     border: none;
     height: 300px;
     margin: 0 20px;
