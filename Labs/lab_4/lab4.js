@@ -84,11 +84,9 @@ function changeSlide(e) {
   // check which button was pressed DESKTOP and MOBILE
   if(e.target.className == "prev" || "prevMobile") {
     nextUp = showing.previousElementSibling;
-    clearInterval(interval_ID);
   }
   if(e.target.className == "next" || "nextMobile") {
     nextUp = showing.nextElementSibling;
-    clearInterval(interval_ID);
   }
 
   // hide current image
