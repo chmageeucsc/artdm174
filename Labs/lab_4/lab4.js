@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", initSlider);
 document.querySelector(".grid").style.display = "none";
 document.querySelector(".wJS").style.display = "block";
 
+// for timer
+let interval_ID = null;
+
+// checks if screen size changes
 setInterval(function() {
   if (window.innerWidth >= 700 ) {
     document.querySelector(".prevMobile").style.display = "none";
@@ -42,7 +46,7 @@ function initSlider() {
 
   // show first slide
   slide[0].classList.remove("hide");
-
+  
   // desktop
   next_btn.addEventListener("click",changeSlide);
   back_btn.addEventListener("click", changeSlide);
@@ -50,6 +54,19 @@ function initSlider() {
   nextMob.addEventListener("click",changeSlide);
   backMob.addEventListener("click", changeSlide);
 
+  // slide show timer for desktop and mobile
+  if (window.innerWidth >= 700 ) {
+    interval_ID = setInterval(function() {
+      next_btn.click();
+    }, 5000);
+  }
+  if (window.innerWidth < 700 ) {
+    interval_ID = setInterval(function() {
+      nextMob.click();
+    }, 5000);
+  }
+
+  // changes caption
   const alt = slides[0].getAttribute('alt');
   // Get the figcaption element
   const figcaption = document.querySelector("figcaption"); 
@@ -64,20 +81,14 @@ function changeSlide(e) {
   let showing = document.querySelector(".current");
   let nextUp = "";
 
-  // check which button was pressed DESKTOP
-  if(e.target.className == "prev") {
+  // check which button was pressed DESKTOP and MOBILE
+  if(e.target.className == "prev" || "prevMobile") {
     nextUp = showing.previousElementSibling;
+    clearInterval(interval_ID);
   }
-  if(e.target.className == "next") {
+  if(e.target.className == "next" || "nextMobile") {
     nextUp = showing.nextElementSibling;
-  }
-
-  // check which button was pressed MOBILE
-  if(e.target.className == "prevMobile") {
-    nextUp = showing.previousElementSibling;
-  }
-  if(e.target.className == "nextMobile") {
-    nextUp = showing.nextElementSibling;
+    clearInterval(interval_ID);
   }
 
   // hide current image
