@@ -6,43 +6,15 @@ Date: 10.10.2024
 
 */
 
-.one {
-  background-color: blue;
-  height: 100px;
-  margin: 10px 0;
-  width: 100px;
-  animation: fade 3s ease-in-out infinite;
+/* creates perfectly square images, photos are cropped and centered */
+.container {
+  box-sizing: border-box;
+  height: 300px;
+  width: 300px;
 }
 
-.two {
-  background-color: red;
-  height: 100px;
-  margin: 10px 0;
-  width: 100px;
-}
-
-/* key frame animations go at the bottom */
-@keyframes fade {
-  0% {
-    background-color: blue;
-    opacity: 100%;
-  }
-
-  25% {
-    opacity: 0%;
-  }
-
-  50% {
-    background-color: red;
-    opacity: 100%;
-  }
-
-  75% {
-    opacity: 0%;
-  }
-
-  100% {
-    background-color: blue;
-    opacity: 100%;
-  }
+img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
