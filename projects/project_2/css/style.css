@@ -1,0 +1,48 @@
+/* 
+
+Student Name: Chantel Gee
+Assignment Name: Project 2 - Photo Gallery
+Date: 10.10.2024
+
+*/
+
+.one {
+  background-color: blue;
+  height: 100px;
+  margin: 10px 0;
+  width: 100px;
+  animation: fade 3s ease-in-out infinite;
+}
+
+.two {
+  background-color: red;
+  height: 100px;
+  margin: 10px 0;
+  width: 100px;
+}
+
+/* key frame animations go at the bottom */
+@keyframes fade {
+  0% {
+    background-color: blue;
+    opacity: 100%;
+  }
+
+  25% {
+    opacity: 0%;
+  }
+
+  50% {
+    background-color: red;
+    opacity: 100%;
+  }
+
+  75% {
+    opacity: 0%;
+  }
+
+  100% {
+    background-color: blue;
+    opacity: 100%;
+  }
+}
