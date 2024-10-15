@@ -6,18 +6,33 @@ Date: 10.10.2024
 
 */
 
+.headerNav {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  padding: 0 10%;
+}
+
+/* NON JS VERS 
+
 .slider {
   margin: auto;
   width: 90%;
 }
-
-/* creates perfectly square images, photos are cropped and centered */
+ /* creates perfectly square images, photos are cropped and centered 
 .slides {
   display: grid;
   grid-gap: 8px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 0.5fr);
-}
+}*/
 
 .slide {
   height: 100%;
@@ -26,4 +41,70 @@ Date: 10.10.2024
   width: 100%;
 }
 
+.slides {
+  margin: 0;
+  width: 100%;
+}
+
 /* make buttons appear on sides of slide */
+
+.slider {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 70%;
+}
+
+figcaption {
+  background-color: rgb(92, 89, 105);
+  color: white;
+  padding: 1%;
+  text-align: center;
+}
+
+
+/* Hide the images by default */
+.slide {
+  display: none;
+}
+
+.current {
+  display: block;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  box-sizing: content-box;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  height: 10%;
+  width: auto;
+  padding: 16px;
+  margin-top: 5px;
+  color: rgb(110, 110, 110);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  border: none;
+}
+
+.prev {
+  left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
