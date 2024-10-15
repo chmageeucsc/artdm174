@@ -4,6 +4,13 @@
 
 document.addEventListener("DOMContentLoaded", initSlider);
 
+// toggles css for non js view
+document.querySelector(".slider").classList.toggle("grid");
+document.querySelector(".slides").classList.toggle("grid");
+document.querySelector("figcaption").classList.toggle("js");
+document.querySelector(".prev").classList.remove("js");
+document.querySelector(".next").classList.remove("js");
+
 // for timer
 let interval_ID = null;
 
