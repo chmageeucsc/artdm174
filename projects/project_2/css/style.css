@@ -16,14 +16,14 @@ body {
   background-color: #020317;
   color: white;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-bottom: 2%;
   overflow: hidden;
-  padding: auto;
+  padding: 0 2% 0;
 }
 
 nav {
-  background-color: #13163c;
+  background-color: #17256a;
   display: flex;
   overflow: hidden;
 }
@@ -97,12 +97,8 @@ figcaption {
 
 
 /* Hide the images by default */
-.slide {
+.hide {
   display: none;
-}
-
-.current {
-  display: block;
 }
 
 /* Next & previous buttons */
