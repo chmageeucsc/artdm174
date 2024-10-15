@@ -20,13 +20,6 @@ h1 {
   font-family: "badSignal", Georgia, 'Times New Roman', Times, serif;
 }
 
-.slide {
-  max-height: 700px;
-  object-fit: cover;
-  overflow: hidden;
-  width: 100%;
-}
-
 .slides {
   margin: 0;
   width: 100%;
@@ -143,6 +136,13 @@ figcaption {
     color: white;
   }
 
+  img.slide {
+    max-height: 700px;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+  }
+
   /* NON JS VERS */
 
   .slider.grid {
@@ -154,7 +154,6 @@ figcaption {
     display: grid;
     grid-gap: 8px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 0.5fr);
   }
 }
 
@@ -195,6 +194,13 @@ figcaption {
   a.active {
     background-color: #201e8b;
     color: white;
+  }
+
+  img.slide {
+    max-height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
   }
   
   /* NON JS VERS */
