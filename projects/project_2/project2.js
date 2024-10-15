@@ -35,7 +35,7 @@ function initSlider() {
   }
 
   // changes caption
-  const alt = slides[0].getAttribute('alt');
+  const alt = slide[0].getAttribute('alt');
   // Get the figcaption element
   const figcaption = document.querySelector("figcaption"); 
   // Change the text content

@@ -6,18 +6,46 @@ Date: 10.15.2024
 
 */
 
+body {
+  background-color: #13163c;
+  margin: 0;
+}
+
 .headerNav {
   align-items: center;
+  background-color: #020317;
+  color: white;
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 2%;
+  overflow: hidden;
+  padding: auto;
 }
 
 nav {
+  background-color: #13163c;
   display: flex;
+  overflow: hidden;
 }
 
 nav a {
-  padding: 0 10%;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+a.active {
+  background-color: #201e8b;
+  color: white;
 }
 
 /* NON JS VERS 
