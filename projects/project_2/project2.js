@@ -89,3 +89,38 @@ function changeSlide(e) {
   figcaption.textContent = alt; 
   
 }
+
+let homeLink = document.querySelector(".homeLink");
+homeLink.addEventListener("click",switchHome);
+
+let blueLink = document.querySelector(".blueLink");
+blueLink.addEventListener("click",switchBlue);
+let blueAlbum = document.querySelectorAll(".BA");
+
+let goldLink = document.querySelector(".goldLink");
+goldLink.addEventListener("click",switchGold);
+let goldAlbum = document.querySelectorAll(".GA");
+
+let nightLink = document.querySelector(".nightLink");
+nightLink.addEventListener("click",switchNight);
+let nightAlbum = document.querySelectorAll(".NA");
+
+let rainLink = document.querySelector(".rainLink");
+rainLink.addEventListener("click",switchRain);
+let rainAlbum = document.querySelectorAll(".RA");
+
+function switchHome() {
+
+  blueAlbum.forEach((blue) => {
+    blue.classList.add("slide");
+  });
+  goldAlbum.forEach((gold) => {
+    gold.classList.add("slide");
+  });
+  nightAlbum.forEach((night) => {
+    night.classList.add("slide");
+  });
+  rainAlbum.forEach((rain) => {
+    rain.classList.add("slide");
+  });
+}
