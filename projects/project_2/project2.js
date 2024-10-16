@@ -15,13 +15,20 @@ function initSlider() {
   const slides = document.querySelector(".slides");
   const slide = slides.querySelectorAll("img");
 
+  // toggles css for non js view
+  document.querySelector(".slider").classList.toggle("grid");
+  document.querySelector(".slides").classList.toggle("grid");
+  document.querySelector("figcaption").classList.toggle("js");
+  document.querySelector(".prev").classList.remove("js");
+  document.querySelector(".next").classList.remove("js");
+
   // hide all images
   slide.forEach((s) => {
     s.classList.add("hide");
   });
 
   // show first slide
-  slide[0].classList.remove("hide");
+  slide[0].classList.toggle("hide");
   
   // desktop
   next_btn.addEventListener("click",changeSlide);
@@ -73,8 +80,8 @@ function changeSlide(e) {
   }
 
   // show next image
-  nextUp.classList.remove("hide");
-  nextUp.classList.add("current");
+  nextUp.classList.toggle("hide");
+  nextUp.classList.toggle("current");
   // check alt text of next photo
   var alt = nextUp.getAttribute("alt");
   const figcaption = document.querySelector("figcaption"); 
