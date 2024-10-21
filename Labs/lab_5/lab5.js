@@ -6,10 +6,9 @@ document.addEventListener("DOMContentLoaded", init);
 
 function init() {
   /**
-   * Shortcut variables
+   * Audio shortcut variables
    */
   const shopChannel = document.querySelector(".shop-channel");
-  const teddy = document.querySelector(".teddy");
   const play = document.getElementById("play");
   const pause = document.getElementById("pause");
   const slo = document.getElementById("slo");
@@ -18,9 +17,22 @@ function init() {
   const pick = document.getElementById("pick");
 
   /**
+   * Video shortcut variables
+   */
+
+  const teddy = document.querySelector(".teddy");
+  const begin = document.getElementById("begin");
+  const sweet = document.getElementById("sweetness");
+  const playful = document.getElementById("playfulness");
+  const patience = document.getElementById("patience");
+  const courage = document.getElementById("courage");
+  const love = document.getElementById("love");
+  const end = document.getElementById("end");
+
+  /**
    * prepare the audio and video for playing
    */
-  shopChannel.src = "audio/MiiPlaza.mp3";
+  shopChannel.src = "audio/ShopChannel.mp3";
   shopChannel.load();
   shopChannel.volume = 0.5;
 
@@ -65,6 +77,40 @@ function init() {
     // set the new song to the same place as the previous one.
     shopChannel.currentTime = time;
   });
+
+   /**
+   * create the button event listeners to control the video
+   */
+
+   begin.addEventListener("click", (e) => {
+    teddy.currentTime = 0;
+  });
+
+  sweet.addEventListener("click", (e) => {
+    teddy.currentTime = 26;
+  });
+
+  playful.addEventListener("click", (e) => {
+    teddy.currentTime = 41.75;
+  });
+
+  patience.addEventListener("click", (e) => {
+    teddy.currentTime = 64.9;
+  });
+
+  courage.addEventListener("click", (e) => {
+    teddy.currentTime = 80.5;
+  });
+
+  love.addEventListener("click", (e) => {
+    teddy.currentTime = 103.7;
+  });
+
+  end.addEventListener("click", (e) => {
+    teddy.currentTime = 168;
+  });
+
+  // track for the captions
 
   let textTrackElem = document.getElementById("text-track");
 
