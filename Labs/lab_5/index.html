@@ -12,15 +12,15 @@ Date: 10.21.2024
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 5</title>
+    <title>Audio and Video</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="lab5.js" defer></script>
   </head>
   <body>
     <div class="A">
-      <h1>Rich Media Demo</h1>
+      <h1>Audio and Video Experience</h1>
 
-      <h2>Audio with custom controls</h2>
+      <h2>Wii Music</h2>
       <audio class="shop-channel" controls>
         <source src="audio/ShopChannel.webm" type="audio/webm">
         <source src="audio/ShopChannel.mp3" type="audio/mp3">
@@ -30,11 +30,13 @@ Date: 10.21.2024
         </p>
       </audio>
       <div class="audio-controls">
-        <button id="ff">ff</button>
-        <button id="slo">slow mo</button>
-        <button id="normal">normal</button>
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <button id="slo">0.5 Speed</button>
+        <button id="normal">Normal Speed</button>
+        <button id="ff">2x Speed</button>
         <select name="pick" id="pick">
-          <option value="">pick a song</option>
+          <option value="">Song choices</option>
           <option value="audio/ShopChannel.mp3">Shop Channel</option>
           <option value="audio/MiiPlaza.mp3">Mii Plaza</option>
         </select>
@@ -44,16 +46,15 @@ Date: 10.21.2024
     <hr>
 
     <div class="V">
-      <h2>Basic Video</h2>
+      <h2>Teddy Has an Operation</h2>
       <video class="teddy" controls>
         <source src="video/teddy.webm" type="video/webm">
         <source src="video/teddy.mp4" type="video/mp4">
         <track default kind="captions" srclang="en" src="caption/teddy.vtt" />
         <p>
-          Here is a link to the video file itself
+          Here is a link to the video file and captions.
           <a href="video/teddy.mp4">Video here</a>
-          and the 
-          <a href="caption/teddy.vtt">captions</a>.
+          <a href="caption/teddy.vtt">Captions here</a>
         </p>
       </video>
     </div>

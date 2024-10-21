@@ -10,9 +10,11 @@ function init() {
    */
   const shopChannel = document.querySelector(".shop-channel");
   const teddy = document.querySelector(".teddy");
-  const ff = document.getElementById("ff");
+  const play = document.getElementById("play");
+  const pause = document.getElementById("pause");
   const slo = document.getElementById("slo");
   const normal = document.getElementById("normal");
+  const ff = document.getElementById("ff");
   const pick = document.getElementById("pick");
 
   /**
@@ -29,8 +31,12 @@ function init() {
    * create the button event listeners to control the audio
    */
 
-  ff.addEventListener("click", (e) => {
-    shopChannel.playbackRate = 2;
+  play.addEventListener("click", (e) => {
+    shopChannel.play();
+  });
+
+  pause.addEventListener("click", (e) => {
+    shopChannel.pause();
   });
 
   slo.addEventListener("click", (e) => {
@@ -39,6 +45,10 @@ function init() {
 
   normal.addEventListener("click", (e) => {
     shopChannel.playbackRate = 1;
+  });
+
+  ff.addEventListener("click", (e) => {
+    shopChannel.playbackRate = 2;
   });
 
   /**
