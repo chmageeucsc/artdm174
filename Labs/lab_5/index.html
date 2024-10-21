@@ -1,48 +1,61 @@
-<!-- copy of Lab 5a Basic Audio/Video Repo -->
+<!--
+
+Student Name: Chantel Gee
+Assignment Name: Lab 5: Audio and Video
+Date: 10.21.2024
+
+--> 
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lab 5</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <script src="lab5.js" defer></script>
-    </head>
-    <body>
-        <h1>Rich Media Demo</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lab5.js" defer></script>
+  </head>
+  <body>
+    <div class="A">
+      <h1>Rich Media Demo</h1>
 
-        <h2>Audio with custom controls</h2>
-        <audio class="low-rider" controls>
-            <source src="audio/low-rider.webm" type="audio/webm" />
-            <source src="audio/low-rider.mp3" type="audio/mp3" />
-            <p>
-                Here is a link to the audio file itself
-                <a href="audio/low-rider.mp3">Audio here</a>
-            </p>
-        </audio>
-        <div class="audio-controls">
-            <button id="ff">ff</button>
-            <button id="slo">slow mo</button>
-            <button id="normal">normal</button>
-            <select name="pick" id="pick">
-                <option value="">pick a song</option>
-                <option value="audio/low-rider.mp3">Low Rider</option>
-                <option value="audio/money.mp3">Money</option>
-            </select>
-        </div>
+      <h2>Audio with custom controls</h2>
+      <audio class="shop-channel" controls>
+        <source src="audio/ShopChannel.webm" type="audio/webm">
+        <source src="audio/ShopChannel.mp3" type="audio/mp3">
+        <p>
+          Here is a link to the audio file itself
+          <a href="audio/ShopChannel.mp3">Audio here</a>
+        </p>
+      </audio>
+      <div class="audio-controls">
+        <button id="ff">ff</button>
+        <button id="slo">slow mo</button>
+        <button id="normal">normal</button>
+        <select name="pick" id="pick">
+          <option value="">pick a song</option>
+          <option value="audio/ShopChannel.mp3">Shop Channel</option>
+          <option value="audio/MiiPlaza.mp3">Mii Plaza</option>
+        </select>
+      </div>
+    </div>
 
-        <hr />
+    <hr>
 
-        <h2>Basic Video</h2>
-        <video class="leverage" controls>
-            <source src="video/leverage-a-synergy.webm" type="video/webm" />
-            <source src="video/leverage-a-synergy.mp4" type="video/mp4" />
-            <p>
-                Here is a link to the video file itself
-                <a href="video/leverage-a-synergy.mp4">Video here</a>
-            </p>
-        </video>
-    </body>
+    <div class="V">
+      <h2>Basic Video</h2>
+      <video class="teddy" controls>
+        <source src="video/teddy.webm" type="video/webm">
+        <source src="video/teddy.mp4" type="video/mp4">
+        <track default kind="captions" srclang="en" src="caption/teddy.vtt" />
+        <p>
+          Here is a link to the video file itself
+          <a href="video/teddy.mp4">Video here</a>
+          and the 
+          <a href="caption/teddy.vtt">captions</a>.
+        </p>
+      </video>
+    </div>
+  </body>
 </html>
