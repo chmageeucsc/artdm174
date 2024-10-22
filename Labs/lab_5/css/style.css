@@ -5,3 +5,12 @@
 hr {
   margin: 3rem 0;
 }
+
+h1 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
