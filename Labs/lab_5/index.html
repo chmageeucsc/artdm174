@@ -14,6 +14,7 @@ Date: 10.21.2024
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio and Video</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://kawaiihoshi.com/wp-content/uploads/2022/09/cropped-favicon-1-438x438.png">
     <script src="lab5.js" defer></script>
   </head>
   <body>
@@ -30,29 +31,31 @@ Date: 10.21.2024
             <a href="audio/ShopChannel.mp3">Audio here</a>
           </p>
         </audio>
+        <br><br>
         <div class="audio-controls">
           <button id="play">Play</button>
           <button id="pause">Pause</button>
-          <button id="slo">0.5 Speed</button>
-          <button id="normal">Normal Speed</button>
-          <button id="ff">2x Speed</button>
           <select name="pick" id="pick">
             <option value="">Song choices</option>
             <option value="audio/ShopChannel.mp3">Shop Channel</option>
             <option value="audio/MiiPlaza.mp3">Mii Plaza</option>
           </select>
+          <h3>Audio Speed</h3>
+          <button id="slo">0.5x (Slow)</button>
+          <button id="normal">Normal</button>
+          <button id="ff">2x (Fast)</button>
         </div>
       </div>
 
       <hr>
 
       <div class="V">
-        <h2>Teddy Has an Operation</h2>
+        <h2>Teddy Has An Operation</h2>
         <p>(Potential Content Warning: surgical instruments, organs, fake bugs)</p>
-        <video class="teddy" controls>
+        <video class="teddy" controls poster="video/thumbnail.JPG">
           <source src="video/teddy.webm" type="video/webm">
           <source src="video/teddy.mp4" type="video/mp4">
-          <track default kind="captions" srclang="en" src="caption/teddy.vtt" />
+          <track default kind="captions" srclang="en" src="caption/teddy.vtt">
           <p>
             Here is a link to the video file and captions.
             <a href="video/teddy.mp4">Video here</a>

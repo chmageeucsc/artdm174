@@ -79,7 +79,7 @@ function init() {
   });
 
    /**
-   * create the button event listeners to control the video
+   * create the button event listeners to control the video IN SECONDS
    */
 
    begin.addEventListener("click", (e) => {
@@ -110,11 +110,4 @@ function init() {
     teddy.currentTime = 168;
   });
 
-  // track for the captions
-
-  let textTrackElem = document.getElementById("text-track");
-
-  textTrackElem.addEventListener("cuechange", (event) => {
-    let cues = event.target.track.activeCues;
-  });
 } // end init function
