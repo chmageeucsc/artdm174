@@ -36,6 +36,16 @@ h1 {
 
 /* TABLET SIZE AND BIGGER */
 @media only screen and (min-width : 1200px) {  
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 7rem;
+  }
+
   main {
     display: flex;
     justify-content: space-evenly;
@@ -53,6 +63,10 @@ h1 {
 
 /* MOBILE SIZE */
 @media only screen and (max-width : 1199px) {
+  .desktop {
+    display: none;
+  }
+
   .A, .V {
     margin-left: 5%;
   }
