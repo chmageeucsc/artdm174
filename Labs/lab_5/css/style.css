@@ -36,6 +36,10 @@ h1 {
   padding: 3%;
 }
 
+.video-controls p, .audio-controls p {
+  cursor: pointer;
+}
+
 .video-controls p {
   background-color: rgb(255, 240, 240);
   border-radius: 5%;
