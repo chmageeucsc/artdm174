@@ -8,3 +8,25 @@ body {
   background-color: rgb(46, 46, 46);
   margin: 0;
 }
+
+header {
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header div {
+  background-color: antiquewhite;
+  display: inline;
+  padding: 10px;
+}
+
+#V {
+  background-color: maroon;
+  border-radius: 1%;
+  height: 500px;
+  margin-left: 1%;
+  text-align: center;
+  width: 60%;
+}
