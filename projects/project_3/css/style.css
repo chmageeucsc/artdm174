@@ -1,7 +1,7 @@
 /* 
 Student Name: Chantel Gee
 Assignment Name: Project 3: Dynamic Media Player
-Date: 10.25.2024 
+Date: 10.29.2024 
 */
 
 body {
@@ -13,14 +13,14 @@ header {
   /* background-color: burlywood; */
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  margin: 5px 15px 15px;
+  padding: 1%;
+  margin: 1%;
 }
 
 header div {
   background-color: antiquewhite;
   display: inline;
-  padding: 10px;
+  padding: 1%;
 }
 
 main {
@@ -33,14 +33,14 @@ main {
   display: block;
   margin: 0 auto;
   text-align: center;
-  width: 60%;
+  width: 49%;
 }
 
 #V>p {
   background-color: rgb(213, 110, 110);
   border-radius: 1%;
   display: block;
-  height: 500px;
+  height: 45%;
   margin: auto;
   text-align: center;
   width: 100%;
@@ -48,8 +48,8 @@ main {
 
 .v-controls {
   background-color: bisque;
-  margin: 10px 0;
-  padding: 1px 0;
+  margin: 2% 0;
+  padding: 1% 0;
 }
 
 #inserts {
@@ -60,13 +60,13 @@ main {
   margin: auto;
   overflow-y: scroll;
   text-align: center;
-  width: 35%;
+  width: 49%;
 }
 
 #inserts p {
   background-color: aliceblue;
   display: block;
-  height: 150px;
+  height: 20%;
   margin: 4% auto;
-  width: 90%;
+  width: 96%;
 }
