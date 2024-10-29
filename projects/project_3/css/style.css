@@ -56,7 +56,9 @@ main {
   background-color: gray;
   border-radius: 1%;
   display: block;
+  height: 750px;
   margin-right: 1%;
+  overflow-y: scroll;
   text-align: center;
   width: 36%;
 }
