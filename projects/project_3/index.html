@@ -19,15 +19,40 @@ Date: 10.29.2024
   </head>
   <body>
     <header>
-      <div>LOGO AND TITLE</div>
-      <div>NAV LINKS</div>
+      <div id="logoTitle">
+        <div id="menu">
+          <p>&equiv;</p>
+        </div>
+        <p id="logo1">NOT</p>
+        <p id="logo2">YouTube</p>
+      </div>
+      <div id="profile">
+        <p>:)</p>
+      </div>
     </header>
 
     <main>
       <div id="V">
-        <p>video here</p>
+        <video class="teddy" controls poster="video/thumbnail.JPG">
+          <source src="video/teddy.webm" type="video/webm">
+          <source src="video/teddy.mp4" type="video/mp4">
+          <track default kind="captions" srclang="en" src="caption/teddy.vtt">
+          <p>
+            Here is a link to the video file and captions.
+            <a href="video/teddy.mp4">Video here</a>
+            <a href="caption/teddy.vtt">Captions here</a>
+          </p>
+        </video>
+        <p>Teddy Has An Operation</p>
         <div class="v-controls">
-          <p>buttons</p>
+          <h3>Video Chapters</h3>
+          <p id="begin">Beginning (0:00)</p>
+          <p id="sweetness">Sweetness (0:26)</p>
+          <p id="playfulness">Playfulness (0:41)</p>
+          <p id="patience">Patience (1:04)</p>
+          <p id="courage">Courage (1:20)</p>
+          <p id="love">Love (1:43)</p>
+          <p id="end">End (2:48)</p>
         </div>
       </div>
       <div id="inserts">

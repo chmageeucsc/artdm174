@@ -6,6 +6,7 @@ Date: 10.29.2024
 
 body {
   background-color: rgb(22, 22, 22);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
 }
 
@@ -13,14 +14,52 @@ header {
   /* background-color: burlywood; */
   display: flex;
   justify-content: space-between;
-  padding: 1%;
-  margin: 1%;
+  padding: 0 2%;
 }
 
 header div {
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
+  color: whitesmoke;
   display: inline;
-  padding: 1%;
+  font-size: 1.3em;
+}
+
+#logoTitle {
+  align-items: center;
+  display: inline-flex;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 1% 0;
+}
+
+#menu>p {
+  margin: 0;
+  padding-right: 20px;
+}
+
+#logo1 {
+  background-color: maroon;
+  border-radius: 20%;
+  margin: 0;
+  padding: 5px;
+}
+
+#logo2, #menu {
+  margin: 0;
+  padding: 5px;
+}
+
+#profile {
+  align-items: center;
+  display: flex;
+}
+
+#profile>p {
+  background-color: pink;
+  border: solid 2px maroon;
+  border-radius: 50%;
+  color: rgb(179, 13, 140);
+  margin: 0;
+  padding: 5px 10px;
 }
 
 main {
@@ -32,24 +71,40 @@ main {
   border-radius: 1%;
   display: block;
   margin: 0 auto;
-  text-align: center;
   width: 49%;
 }
 
 #V>p {
-  background-color: rgb(213, 110, 110);
+  /* background-color: rgb(213, 110, 110); */
   border-radius: 1%;
+  color: whitesmoke;
   display: block;
-  height: 45%;
-  margin: auto;
-  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5em;
+  margin: 2% 2%;
   width: 100%;
 }
 
+video {
+  width: 100%;
+  max-width: 700px;
+}
+
 .v-controls {
-  background-color: bisque;
-  margin: 2% 0;
-  padding: 1% 0;
+  background-color: rgb(59, 59, 59);
+  color: whitesmoke;
+  margin: 2%;
+  padding: 1% 2%;
+}
+
+.v-controls p {
+  border-radius: 5%;
+  color: pink;
+  padding: 2px;
+}
+
+.v-controls p:hover {
+  cursor: pointer;
 }
 
 #inserts {
