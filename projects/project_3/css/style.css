@@ -133,8 +133,8 @@ video {
 /* change p to whatever you decide to use */
 #inserts iframe {
   background-color: aliceblue;
-  display: block;
+  display: none;
   height: 60%;
   margin: 4% auto;
-  width: 96%;
+  width: 92%;
 }

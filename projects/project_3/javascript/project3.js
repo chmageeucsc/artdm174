@@ -31,7 +31,6 @@ function init() {
    * Video shortcut variables
    */
 
-  const vid = document.querySelector("#vid");
   const teddy = document.querySelector(".teddy");
   const begin = document.getElementById("begin");
   const sweet = document.getElementById("sweetness");
@@ -141,52 +140,54 @@ function inactiveVideoButton(button) {
 //You can code up whatever behavior you need in your own callbacks
 
 function func1() {
-  document.querySelector("#vid").style = "outline : 10px solid red";
+  document.querySelector("#web1").style.display = "block";
+  document.querySelector("#web1").src =
+    "https://en.wikipedia.org/wiki/Teddy_bear";
 }
 
 function func2() {
-  let pop = document.querySelector(".pop");
-  pop.innerHTML = "<p>Ohh Snap!</p>";
-  document.querySelector(".pop").classList.toggle("hide");
-  setTimeout(() => {
-      document.querySelector(".pop").classList.toggle("hide");
-  }, 2000);
+  document.querySelector("#web2").style.display = "block";
+  document.querySelector("#web2").src =
+    "https://blog.blueprintprep.com/medical/how-long-does-it-take-to-become-a-surgeon/";
 }
 
 function func3() {
-  const pop = document.querySelector(".pop");
-  pop.innerHTML = "<p>E=MC<sup>2</sup> is NOT Statistical Data!!</p>";
-  pop.classList.toggle("hide");
-  setTimeout(() => {
-      document.querySelector(".pop").classList.toggle("hide");
-  }, 2000);
-  document.querySelector("#vid").style = "outline: 0px solid red";
-  document.querySelector("#web").src =
-      "https://en.wikipedia.org/wiki/Albert_Einstein";
+  document.querySelector("#web3").style.display = "block";
+  document.querySelector("#web3").src =
+    "https://www.thekitchn.com/old-school-strawberry-bon-bons-history-23307357";
 }
 
 function func4() {
-  document.querySelector("#web").src =
-      "https://en.wikipedia.org/wiki/Paradigm_shift";
+  document.querySelector("#web4").style.display = "block";
+  document.querySelector("#web4").src =
+    "https://www.calm.com/blog/how-to-cultivate-patience-in-your-daily-life";
 }
 
 function func5() {
-  document.querySelector("#web").src =
-      "https://en.wikipedia.org/wiki/Domestic_violence";
+  document.querySelector("#web5").style.display = "block";
+  document.querySelector("#web5").src =
+    "https://medium.com/@timcastle_/the-mindset-shift-transforming-fear-into-courage-978a4998e795#:~:text=The%20first%20step%20in%20transforming,yourself%20to%20reach%20new%20heights.";
 }
 
 function func6() {
-  document.querySelector("#web").src = "images/koljr-banana-splits-400.jpg";
+  document.querySelector("#web6").style.display = "block";
+  document.querySelector("#web6").src = "https://posproject.org/blog-curious-about-curiosity/";
 }
 
 function func7() {
-  document.querySelector("#web").src = "images/koljr-banana-splits-400.jpg";
+  document.querySelector("#web7").style.display = "block";
+  document.querySelector("#web7").src =
+    "https://ideas.ted.com/how-did-the-human-heart-become-associated-with-love-and-how-did-it-turn-into-the-shape-we-know-today/";
 }
 
 function func8() {
-  document.querySelector("#web").src = "images/koljr-banana-splits-400.jpg";
+  document.querySelector("#web8").style.display = "block";
+  document.querySelector("#web8").src = "https://youtu.be/J_CFBjAyPWE?si=B32DIbFHztTRENBl";
 }
 
 function func9() {
-  document.querySelector("#web").src = "images/koljr-banana-splits-400.jpg";
+  document.querySelector("#web9").style.display = "block";
+  document.querySelector("#web9").style.height = "85%";
+  document.querySelector("#web9").src =
+    "https://img.freepik.com/free-vector/get-well-soon-with-cute-bear_23-2148500957.jpg";
 }
