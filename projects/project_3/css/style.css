@@ -131,10 +131,10 @@ video {
 }
 
 /* change p to whatever you decide to use */
-#inserts p {
+#inserts iframe {
   background-color: aliceblue;
   display: block;
-  height: 20%;
+  height: 60%;
   margin: 4% auto;
   width: 96%;
 }
