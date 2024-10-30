@@ -15,7 +15,7 @@ Date: 10.29.2024
     <title>Dynamic Media Player</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="https://kawaiihoshi.com/wp-content/uploads/2022/09/cropped-favicon-1-438x438.png">
-    <script src="project3.js" defer></script>
+    <script type="module" src="javascript/project3.js" defer></script>
   </head>
   <body>
     <header>
@@ -33,7 +33,7 @@ Date: 10.29.2024
 
     <main>
       <div id="V">
-        <video class="teddy" controls poster="video/thumbnail.JPG">
+        <video id="vid" class="teddy" controls poster="video/thumbnail.JPG">
           <source src="video/teddy.webm" type="video/webm">
           <source src="video/teddy.mp4" type="video/mp4">
           <track default kind="captions" srclang="en" src="caption/teddy.vtt">
@@ -46,13 +46,18 @@ Date: 10.29.2024
         <p>Teddy Has An Operation</p>
         <div class="v-controls">
           <h3>Video Chapters</h3>
-          <p id="begin">Beginning (0:00)</p>
-          <p id="sweetness">Sweetness (0:26)</p>
-          <p id="playfulness">Playfulness (0:41)</p>
-          <p id="patience">Patience (1:04)</p>
-          <p id="courage">Courage (1:20)</p>
-          <p id="love">Love (1:43)</p>
-          <p id="end">End (2:48)</p>
+          <div class="chapters">
+            <p class="col" id="begin">Beginning (0:00)</p>
+            <p class="col"  id="sweetness">Sweetness (0:26)</p>
+            <p class="col"  id="playfulness">Playfulness (0:41)</p>
+            <p class="col"  id="patience">Patience (1:04)</p>
+          </div>
+          <div class="chapters">
+            <p class="col"  id="courage">Courage (1:20)</p>
+            <p class="col"  id="love">Love (1:43)</p>
+            <p class="col"  id="end">End (2:48)</p>
+            <p class="col"></p>
+          </div>
         </div>
       </div>
       <div id="inserts">
