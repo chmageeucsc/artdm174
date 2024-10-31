@@ -146,10 +146,19 @@ function func7() {
   document.querySelector("#web7").src =
     "https://ideas.ted.com/how-did-the-human-heart-become-associated-with-love-and-how-did-it-turn-into-the-shape-we-know-today/";
 }
+// for func8 temporary pfp change
+function pfpChange() {
+  document.getElementById('pfp').innerHTML = ":)";
+}
 
 function func8() {
   document.querySelector("#web8").style.display = "block";
   document.querySelector("#web8").src = "https://www.youtube.com/embed/JIq5JWu4BaA?si=hE-jjoAbqnkyAnvr";
+  document.querySelector("#inserts").style.backgroundColor = "maroon";
+  document.getElementById('pfp').innerHTML = ":(";
+  setInterval(pfpChange, 10000);
+  clearInterval();
+
 }
 
 function func9() {
