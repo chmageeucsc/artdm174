@@ -11,6 +11,8 @@ var myCues;
 
 function init() {
 
+  alert("For the best experience, watch fully from beginning to end :)");
+
   // create a playlist of functions to call at certain moments in the video.
   myCues = [
     { seconds: 2, callback: func1 },
@@ -107,6 +109,7 @@ function func1() {
 function func2() {
   document.querySelector("#web2").style.display = "block";
   document.querySelector("#web2").src = "https://blog.blueprintprep.com/medical/how-long-does-it-take-to-become-a-surgeon/";
+  document.querySelector("#web2a").style.display = "block";
 }
 
 function func3() {

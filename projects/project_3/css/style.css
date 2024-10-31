@@ -123,7 +123,9 @@ video {
 #inserts {
   background-color: gray;
   border-radius: 1%;
+  color: whitesmoke;
   display: block;
+  font-size: 1.3em;
   height: 750px;
   overflow-y: scroll;
   text-align: center;
@@ -137,4 +139,8 @@ video {
   height: 60%;
   margin: 4% auto;
   width: 92%;
+}
+
+.hide {
+  display: none;
 }
