@@ -41,6 +41,9 @@ function init() {
   const courage = document.getElementById("courage");
   const love = document.getElementById("love");
   const end = document.getElementById("end");
+  const vcTitle = document.getElementById("vc-title");
+  const ch1 = document.getElementById("ch1");
+  const ch2 = document.getElementById("ch2");
 
   //set video's initial volume
   teddy.volume = 0.5;
@@ -95,6 +98,12 @@ function init() {
     button.style.backgroundColor = "rgb(96, 58, 58)";
     button.style.color = "white";
   }
+
+  // show and hide video chapters
+  vcTitle.addEventListener("click", (e) => {
+    ch1.classList.toggle("hide");
+    ch2.classList.toggle("hide");
+  });
 
 } // end init function
 

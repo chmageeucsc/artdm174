@@ -62,18 +62,6 @@ header div {
   padding: 5px 10px;
 }
 
-main {
-  display: flex;
-  justify-content: space-between;
-}
-
-#V {
-  border-radius: 1%;
-  display: block;
-  margin: 0 auto;
-  width: 49%;
-}
-
 #V>p {
   /* background-color: rgb(213, 110, 110); */
   border-radius: 1%;
@@ -86,8 +74,9 @@ main {
 }
 
 video {
-  width: 100%;
+  margin: 0 3% 0;
   max-width: 700px;
+  width: 100%;
 }
 
 .v-controls {
@@ -97,22 +86,9 @@ video {
   padding: 1% 2%;
 }
 
-.chapters {
-  display: flex;
-}
-
-.col {
-  flex: 50%;
-}
-
 .v-controls p {
   color: pink;
   padding: 2% 1%;
-}
-
-.v-controls p:hover {
-  border: dotted 1px pink;
-  cursor: pointer;
 }
 
 #begin {
@@ -120,27 +96,92 @@ video {
   color: white
 }
 
-#inserts {
-  background-color: gray;
-  border-radius: 1%;
-  color: whitesmoke;
-  display: block;
-  font-size: 1.3em;
-  height: 750px;
-  overflow-y: scroll;
-  text-align: center;
-  width: 49%;
-}
-
-/* change p to whatever you decide to use */
-#inserts iframe {
-  background-color: aliceblue;
-  display: none;
-  height: 60%;
-  margin: 4% auto;
-  width: 92%;
-}
-
 .hide {
   display: none;
+}
+
+/* TABLET SIZE AND BIGGER */
+@media only screen and (min-width : 800px) {
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #V {
+    border-radius: 1%;
+    display: block;
+    margin: 0 auto;
+    width: 49%;
+  }
+
+  #vc-title:hover {
+    cursor: pointer;
+  }  
+
+  .chapters {
+  display: flex;
+  }
+
+  .col {
+    flex: 50%;
+  }
+
+  .v-controls p:hover {
+    border: dotted 1px pink;
+    cursor: pointer;
+  }
+
+  #inserts {
+    background-color: gray;
+    border-radius: 1%;
+    color: whitesmoke;
+    display: block;
+    font-size: 1.3em;
+    height: 750px;
+    margin: auto;
+    overflow-y: scroll;
+    text-align: center;
+    width: 49%;
+  }
+
+  /* change p to whatever you decide to use */
+  #inserts iframe {
+    background-color: aliceblue;
+    display: none;
+    height: 60%;
+    margin: 4% auto;
+    width: 92%;
+  }
+}
+
+/* MOBILE SIZE */
+@media only screen and (max-width : 799px) {
+  
+  #V {
+    margin: auto;
+  }
+
+  #inserts {
+    background-color: gray;
+    border-radius: 1%;
+    color: whitesmoke;
+    display: block;
+    font-size: 1.3em;
+    height: 500px;
+    margin: auto;
+    overflow-y: scroll;
+    text-align: center;
+    width: 96%;
+  }
+
+  /* change p to whatever you decide to use */
+  #inserts iframe {
+    background-color: aliceblue;
+    display: none;
+    height: 90%;
+    margin: 4% auto;
+    width: 90%;
+  }
+
 }
