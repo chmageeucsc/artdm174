@@ -49,129 +49,84 @@ function init() {
 
    begin.addEventListener("click", (e) => {
     teddy.currentTime = 0;
-    activeVideoButton(begin);
-    inactiveVideoButton(sweet);
-    inactiveVideoButton(playful);
-    inactiveVideoButton(patience);
-    inactiveVideoButton(courage);
-    inactiveVideoButton(love);
-    inactiveVideoButton(end);
+    inactiveVideoButton(begin);
   });
 
   sweet.addEventListener("click", (e) => {
     teddy.currentTime = 26;
-    inactiveVideoButton(begin);
-    activeVideoButton(sweet);
-    inactiveVideoButton(playful);
-    inactiveVideoButton(patience);
-    inactiveVideoButton(courage);
-    inactiveVideoButton(love);
-    inactiveVideoButton(end);
+    inactiveVideoButton(sweet);
   });
 
   playful.addEventListener("click", (e) => {
     teddy.currentTime = 41.75;
-    inactiveVideoButton(begin);
-    inactiveVideoButton(sweet);
-    activeVideoButton(playful);
-    inactiveVideoButton(patience);
-    inactiveVideoButton(courage);
-    inactiveVideoButton(love);
-    inactiveVideoButton(end);
+    inactiveVideoButton(playful);
   });
 
   patience.addEventListener("click", (e) => {
     teddy.currentTime = 64.9;
-    inactiveVideoButton(begin);
-    inactiveVideoButton(sweet);
-    inactiveVideoButton(playful);
-    activeVideoButton(patience);
-    inactiveVideoButton(courage);
-    inactiveVideoButton(love);
-    inactiveVideoButton(end);
+    inactiveVideoButton(patience);
   });
 
   courage.addEventListener("click", (e) => {
     teddy.currentTime = 80.5;
-    inactiveVideoButton(begin);
-    inactiveVideoButton(sweet);
-    inactiveVideoButton(playful);
-    inactiveVideoButton(patience);
-    activeVideoButton(courage);
-    inactiveVideoButton(love);
-    inactiveVideoButton(end);
+    inactiveVideoButton(courage);
   });
 
   love.addEventListener("click", (e) => {
     teddy.currentTime = 103.7;
-    inactiveVideoButton(begin);
-    inactiveVideoButton(sweet);
-    inactiveVideoButton(playful);
-    inactiveVideoButton(patience);
-    inactiveVideoButton(courage);
-    activeVideoButton(love);
-    inactiveVideoButton(end);
+    inactiveVideoButton(love);
   });
 
   end.addEventListener("click", (e) => {
     teddy.currentTime = 168;
-    inactiveVideoButton(begin);
-    inactiveVideoButton(sweet);
-    inactiveVideoButton(playful);
-    inactiveVideoButton(patience);
-    inactiveVideoButton(courage);
-    inactiveVideoButton(love);
-    activeVideoButton(end);
+    inactiveVideoButton(end);
   });
+  
+  function inactiveVideoButton(button) {
+    let chapters = [begin, sweet, playful, patience, courage, love, end];
+    chapters.forEach((item) => {
+      if (item != button) {
+        item.style.backgroundColor = "rgb(59, 59, 59)";
+        item.style.color = "pink";
+      }
+    });
+    button.style.backgroundColor = "rgb(96, 58, 58)";
+    button.style.color = "white";
+  }
 
 } // end init function
-
-function activeVideoButton(button){
-  button.style.backgroundColor = "rgb(145, 68, 68)";
-  button.style.color = "white";
-}
-
-function inactiveVideoButton(button) {
-  button.style.backgroundColor = "rgb(59, 59, 59)";
-  button.style.color = "pink";
-}
 
 //the custom callback functions to trigger when a cuepoint is hit.
 //You can code up whatever behavior you need in your own callbacks
 
 function func1() {
   document.querySelector("#web1").style.display = "block";
-  document.querySelector("#web1").src =
-    "https://en.wikipedia.org/wiki/Teddy_bear";
+  document.querySelector("#web1").src = "https://en.wikipedia.org/wiki/Teddy_bear";
 }
 
 function func2() {
   document.querySelector("#web2").style.display = "block";
-  document.querySelector("#web2").src =
-    "https://blog.blueprintprep.com/medical/how-long-does-it-take-to-become-a-surgeon/";
+  document.querySelector("#web2").src = "https://blog.blueprintprep.com/medical/how-long-does-it-take-to-become-a-surgeon/";
 }
 
 function func3() {
   document.querySelector("#web3").style.display = "block";
-  document.querySelector("#web3").src =
-    "https://www.thekitchn.com/old-school-strawberry-bon-bons-history-23307357";
+  document.querySelector("#web3").src = "https://www.bonappetit.com/story/strawberry-candies-nostalgia";
 }
 
 function func4() {
   document.querySelector("#web4").style.display = "block";
-  document.querySelector("#web4").src =
-    "https://www.calm.com/blog/how-to-cultivate-patience-in-your-daily-life";
+  document.querySelector("#web4").src = "https://psychcentral.com/blog/tips-for-being-more-patient-with-your-kids";
 }
 
 function func5() {
   document.querySelector("#web5").style.display = "block";
-  document.querySelector("#web5").src =
-    "https://medium.com/@timcastle_/the-mindset-shift-transforming-fear-into-courage-978a4998e795#:~:text=The%20first%20step%20in%20transforming,yourself%20to%20reach%20new%20heights.";
+  document.querySelector("#web5").src = "https://www.baptisthealth.com/blog/family-health/10-most-common-phobias-fears";
 }
 
 function func6() {
   document.querySelector("#web6").style.display = "block";
-  document.querySelector("#web6").src = "https://posproject.org/blog-curious-about-curiosity/";
+  document.querySelector("#web6").src = "https://greatergood.berkeley.edu/article/item/six_surprising_benefits_of_curiosity";
 }
 
 function func7() {
@@ -182,12 +137,11 @@ function func7() {
 
 function func8() {
   document.querySelector("#web8").style.display = "block";
-  document.querySelector("#web8").src = "https://youtu.be/J_CFBjAyPWE?si=B32DIbFHztTRENBl";
+  document.querySelector("#web8").src = "https://www.youtube.com/embed/JIq5JWu4BaA?si=hE-jjoAbqnkyAnvr";
 }
 
 function func9() {
   document.querySelector("#web9").style.display = "block";
   document.querySelector("#web9").style.height = "85%";
-  document.querySelector("#web9").src =
-    "https://img.freepik.com/free-vector/get-well-soon-with-cute-bear_23-2148500957.jpg";
+  document.querySelector("#web9").src = "https://img.freepik.com/free-vector/get-well-soon-with-cute-bear_23-2148500957.jpg";
 }
