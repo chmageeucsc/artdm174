@@ -1,7 +1,7 @@
 //
 // Student Name: Chantel Gee
 // Assignment Name: Project 3: Dynamic Media Player
-// Date: 10.25.2024
+// Date: 11.02.2024
 //
 
 import { cueTimer } from "./cuepoints.js";
@@ -42,8 +42,7 @@ function init() {
   const love = document.getElementById("love");
   const end = document.getElementById("end");
   const vcTitle = document.getElementById("vc-title");
-  const ch1 = document.getElementById("ch1");
-  const ch2 = document.getElementById("ch2");
+  const chDiv = document.getElementById("chapterDiv");
 
   //set video's initial volume
   teddy.volume = 0.5;
@@ -101,8 +100,7 @@ function init() {
 
   // show and hide video chapters
   vcTitle.addEventListener("click", (e) => {
-    ch1.classList.toggle("hide");
-    ch2.classList.toggle("hide");
+    chDiv.classList.toggle("hide");
   });
 
 } // end init function
@@ -117,13 +115,16 @@ function func1() {
 
 function func2() {
   document.querySelector("#web2").style.display = "block";
-  document.querySelector("#web2").src = "https://blog.blueprintprep.com/medical/how-long-does-it-take-to-become-a-surgeon/";
+  document.querySelector("#web2").src = 
+    "https://images.stockcake.com/public/f/4/1/f41a0e2b-37df-4031-b25e-a747f25ee6a6_large/doctor-teddy-bear-stockcake.jpg";
+  document.querySelector("#inserts").style.backgroundColor = "rgb(87, 83, 109)";
   document.querySelector("#web2a").style.display = "block";
 }
 
 function func3() {
   document.querySelector("#web3").style.display = "block";
   document.querySelector("#web3").src = "https://www.bonappetit.com/story/strawberry-candies-nostalgia";
+  document.querySelector("#inserts").style.backgroundColor = "gray";
 }
 
 function func4() {
@@ -133,27 +134,36 @@ function func4() {
 
 function func5() {
   document.querySelector("#web5").style.display = "block";
-  document.querySelector("#web5").src = "https://www.baptisthealth.com/blog/family-health/10-most-common-phobias-fears";
+  document.querySelector("#web5").src = 
+    "https://target.scene7.com/is/image/Target/GUEST_44d55f3d-a0d4-4ce6-896f-b9f660c58716?wid=488&hei=488&fmt=pjpeg";
+    document.querySelector("#web5").style.height = "65%";
 }
 
 function func6() {
   document.querySelector("#web6").style.display = "block";
-  document.querySelector("#web6").src = "https://greatergood.berkeley.edu/article/item/six_surprising_benefits_of_curiosity";
+  document.querySelector("#web6").src = 
+    "https://i.pinimg.com/originals/00/ff/07/00ff07cde7fc339571fd10a266744200.gif";
+  document.querySelector("#web7").style.height = "55%";
 }
 
 function func7() {
   document.querySelector("#web7").style.display = "block";
   document.querySelector("#web7").src =
-    "https://ideas.ted.com/how-did-the-human-heart-become-associated-with-love-and-how-did-it-turn-into-the-shape-we-know-today/";
-}
+    "https://i.pinimg.com/originals/c5/c6/73/c5c673dc3cb4ebd03675713b984a25cd.gif";
+  document.querySelector("#inserts").style.backgroundColor = "pink";
+  }
+
 // for func8 temporary pfp change
 function pfpChange() {
   document.getElementById('pfp').innerHTML = ":)";
+  document.querySelector("#inserts").style.backgroundColor = "pink";
+  document.querySelector("#web8").src = "https://media.istockphoto.com/id/1461182793/vector/cute-teddy-bear-winking-eye-with-red-heart-cartoon-vector-illustration.jpg?s=612x612&w=0&k=20&c=HyZ1KmOp8h155HqNmYVlWQ4fEL7AzDs5KuWU-i6HM6c=";
+  document.querySelector("#web8").style.height = "80%";
 }
 
 function func8() {
   document.querySelector("#web8").style.display = "block";
-  document.querySelector("#web8").src = "https://www.youtube.com/embed/JIq5JWu4BaA?si=hE-jjoAbqnkyAnvr";
+  document.querySelector("#web8").src = "https://media.istockphoto.com/id/1423810710/vector/children-arguing-over-teddy-bear-toy-vector-cartoon-illustration.jpg?s=612x612&w=0&k=20&c=_tyQwTjBJPRDyeBkE0njTiSK0JvVdufsagomRfuNxHE=";
   document.querySelector("#inserts").style.backgroundColor = "maroon";
   document.getElementById('pfp').innerHTML = ":(";
   setInterval(pfpChange, 10000);
