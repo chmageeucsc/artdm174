@@ -19,8 +19,8 @@ fetch("houses.json")
 
             // generate the html snippet for one array item
             //to be added to the "html" temp holder.
-            let objInfo = `<p class="house">${house.name}</p>
-        <p class="folks">${family}</p>`;
+            let objInfo = `<dt class="house">${house.name}</dt>
+        <dd class="folks">${family}</dd>`;
             html += objInfo;
         });
 
