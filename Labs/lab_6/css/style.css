@@ -4,7 +4,19 @@ Assignment Name: Lab 6: Fetch
 Date: 11.11.2024 
 */
 
+body {
+  margin: 2%;
+}
+
+div {
+  background-color: rgb(214, 239, 238);
+  border-radius: 1%;
+  display: inline-block;
+  padding: 2%;
+}
+
 dt {
+  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -13,6 +25,6 @@ dt::after {
 }
 
 dd {
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   margin: 1em;
 }
