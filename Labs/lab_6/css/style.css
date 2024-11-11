@@ -4,16 +4,15 @@ Assignment Name: Lab 6: Fetch
 Date: 11.11.2024 
 */
 
-p,
 dt {
   font-weight: bold;
 }
 
-dl,
-dd {
-  font-size: 0.9rem;
+dt::after {
+  content: ": ";
 }
 
 dd {
-  margin-bottom: 1em;
+  font-size: 0.9rem;
+  margin: 1em;
 }

@@ -20,7 +20,7 @@ fetch("houses.json")
             // generate the html snippet for one array item
             //to be added to the "html" temp holder.
             let objInfo = `<dt class="house">${house.name}</dt>
-        <dd class="folks">${family}</dd>`;
+            <dd class="folks">${family}</dd>`;
             html += objInfo;
         });
 
@@ -31,3 +31,30 @@ fetch("houses.json")
     })
     .catch((err) => console.log("Oops!", err));
     //this only runs if there is an error during the above process
+
+// random color for background
+function randomHex() {
+    // Storing all letter and digit combinations 
+    // for html color code 
+    let letters = "0123456789ABCDEF"; 
+    
+    // color will hold the generated combination
+    let color = ''; 
+    
+    // Generating 6 times as HTML color code  
+    // consist of 6 letter or digits 
+    for (let i = 0; i < 6; i++) 
+        color += letters[(Math.floor(Math.random() * 16))]; 
+    
+    return(color);
+}
+
+fetch("https://www.thecolorapi.com/id?hex=" + randomHex() + "&format=json")
+    .then((response) => response.json())
+    .then((data) => {
+        document.body.style.background = data.hex.value;
+        console.log(data.hex.value);
+    })
+    .catch((err) => console.log("Colr error!", err));
+
+    
