@@ -33,5 +33,14 @@ function getCatPhoto()
 getCatPhoto()
 
 function getCatFax() {
-  
+  fetch(`https://meowfacts.herokuapp.com/`)
+    .then(response => {
+      return response.json()
+  })
+  .then(data => 
+    document.getElementById("catFax").innerHTML = data[0]
+  )
+  .catch(error => console.log("ERROR"))
 }
+
+getCatFax();
