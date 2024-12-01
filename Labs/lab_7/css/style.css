@@ -1,7 +1,7 @@
 /* 
 Student Name: Chantel Gee
 Assignment Name: Lab 7: Fun with Remote APIs
-Date: 11.29.2024 
+Date: 11.30.2024 
 */
 
 /* MOBILE SIZE */
@@ -83,7 +83,7 @@ Date: 11.29.2024
 
   body {
     background-color: rgb(26, 22, 35);
-    background-image: url(https://images.unsplash.com/photo-1579267217516-b73084bd79a6?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Y1NjctYWRqLTIwLWRvb2RsZXMtam9iNTk3LmpwZw.jpg);
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -92,27 +92,15 @@ Date: 11.29.2024
   .logoTitle {
     align-items: center;
     background-color: rgba(224, 234, 238, .75);
-    color: rgb(7, 27, 107);
+    color: rgb(35, 0, 140);
     display: flex;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 1.3em;
     padding-right: 1%;
   }
 
-  @keyframes colors {
-    0% {
-      color: rgb(7, 27, 107);
-      font-size: 120%;
-    }
-    50%{
-      color: blue;
-    }
-    75% {
-      color: #527aff;
-    }
-    100% {
-      color: rgb(4, 35, 156);
-    }
+  figure>img {
+    margin: 3% 0 0 0;
   }
 
   .logoTitle h1 {
@@ -126,7 +114,7 @@ Date: 11.29.2024
   }
 
   nav {
-    background-color: rgb(145, 200, 213);
+    background-color: rgb(159, 124, 215);
     display: flex;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: space-between;
@@ -141,16 +129,19 @@ Date: 11.29.2024
   }
 
   nav a:hover {
-    background-color: rgb(195, 219, 240);
+    background-color: rgb(236, 195, 240);
     padding: 1%;
     text-decoration: overline;
     transition: all 1s ease;
   }
 
   main {
+    background-color: rgba(42, 35, 97, 0.75);
+    border-radius: 5%;
     color: aliceblue;
     font-family:'Times New Roman', Times, serif;
     margin: 10%;
+    padding: 5%;
     text-align: center;
   }
 
@@ -164,7 +155,6 @@ Date: 11.29.2024
   }
 
   main h3, h3 a {
-    /* background-color: rgb(87, 24, 189); */
     color: white;
     display: inline;
     font-family: 'Times New Roman', Times, serif;

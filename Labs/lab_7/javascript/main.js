@@ -2,49 +2,36 @@
 //
 // Student Name: Chantel Gee
 // Assignment Name: Lab 7: Fun with Remote APIs
-// Date: 11.29.2024
+// Date: 11.30.2024
 //
 
-// random color for background
-function randomHex() {
-  // Storing all letter and digit combinations 
-  // for html color code 
-  let letters = "0123456789ABCDEF"; 
+const API_URL = `https://api.thecatapi.com/v1/`;
+const API_KEY = "DEMO-API-KEY";
+
+let currentCat;
+
+function getCatPhoto()
+{
   
-  // color will hold the generated combination
-  let color = ''; 
-  
-  // Generating 6 times as HTML color code  
-  // consist of 6 letter or digits 
-  for (let i = 0; i < 6; i++) 
-      color += letters[(Math.floor(Math.random() * 16))]; 
-  
-  return(color);
+  const url = `${API_URL}images/search`;
+
+  fetch(url,{headers: {
+    'x-api-key': API_KEY
+  }})
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    currentCat = data[0];
+    document.getElementById("catLogo").src= currentCat.url;
+    document.getElementById("catLogo").style.height = '120px';
+    document.getElementById("catLogo").style.width = '120';
+  });
+
 }
 
-async function loadColor() {
-  return (await fetch("https://www.thecolorapi.com/id?hex=" + randomHex() + "&format=json")).json();
+getCatPhoto()
+
+function getCatFax() {
+  
 }
-
-document.addEventListener("DOMContentLoaded", async () => {
-  let houses = [];
-
-  try {
-      color = await loadColor();
-  } catch (e) {
-      console.log("Error!");
-      console.log(e);
-  }
-
-  let html = "";
-
-  //make a reference to the html container where
-  //the info will be displayed.
-  const container = document.querySelector("#container");
-  container.innerHTML = html;
-  
-  // console.log(houses);
-
-  document.body.style.background = color.hex.value;
-});
-  
