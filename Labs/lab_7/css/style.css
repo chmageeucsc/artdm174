@@ -9,7 +9,7 @@ Date: 11.30.2024
 
   body {
     background-color: rgb(26, 22, 35);
-    background-image: url(https://images.unsplash.com/photo-1579267217516-b73084bd79a6?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Y1NjctYWRqLTIwLWRvb2RsZXMtam9iNTk3LmpwZw.jpg);
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -17,8 +17,8 @@ Date: 11.30.2024
 
   .logoTitle {
     align-items: center;
-    background-color: rgba(224, 234, 238, .75);
-    color: rgb(7, 27, 107);
+    background-color: rgba(238, 224, 228, 0.75);
+    color: rgb(35, 0, 140);
     display: flex;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 1.3em;
@@ -31,7 +31,7 @@ Date: 11.30.2024
   }
 
   nav {
-    background-color: rgb(145, 200, 213);
+    background-color: rgb(159, 124, 215);
     display: flex;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: space-between;
@@ -44,17 +44,24 @@ Date: 11.30.2024
   }
 
   main {
+    background-color: rgba(42, 35, 97, 0.75);
     color: aliceblue;
     font-family:'Times New Roman', Times, serif;
-    margin: 10%;
+    margin: 10% auto;
+    padding: 5%;
+    text-align: center;
+    width: fit-content;
+  }
+
+  h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .button {
     text-align: center;
   }
 
-  main h1 {
-    font-size: 2.5em;
-  }
-
-  main h3, h3 a {
+  h3, h3 a {
     background-color: rgb(87, 24, 189);
     color: white;
     display: inline;
@@ -64,7 +71,7 @@ Date: 11.30.2024
     text-decoration: none;
   }
 
-  main h4 {
+  h4 {
     color: rgb(225, 182, 229);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: .85em;
@@ -100,6 +107,8 @@ Date: 11.30.2024
   }
 
   figure>img {
+    max-height: 200px;
+    max-width: 200px;
     margin: 3% 0 0 0;
   }
 
@@ -137,24 +146,30 @@ Date: 11.30.2024
 
   main {
     background-color: rgba(42, 35, 97, 0.75);
-    border-radius: 5%;
     color: aliceblue;
     font-family:'Times New Roman', Times, serif;
-    margin: 10%;
-    padding: 5%;
+    margin: 5% auto;
+    max-width: 700px;
+    padding: 2%;
+    text-align: center;
+    width: fit-content;
+  }
+
+  h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+  }
+
+  .button {
     text-align: center;
   }
 
-  main h1 {
-    font-size: 3.5em;
-  }
-
-  main h3 {
+  h3 {
     background: linear-gradient(to left, rgb(87, 24, 189) 50%, white 50%) right;
     background-size: 300%;
   }
 
-  main h3, h3 a {
+  h3, h3 a {
     color: white;
     display: inline;
     font-family: 'Times New Roman', Times, serif;
@@ -164,7 +179,7 @@ Date: 11.30.2024
     transition: .75s ease-out;
   }
 
-  main h3:hover {
+  h3:hover {
     background-position: left;
     border-radius: 7px;
   }
@@ -175,15 +190,7 @@ Date: 11.30.2024
     font-weight: bold;
   }
 
-  main h4 {
-    color: rgb(225, 182, 229);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: .85em;
-    text-transform: uppercase;
-  }
-
-  main p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  #catFax {
     font-size: 1.25em;
     margin-bottom: 50px;
   }

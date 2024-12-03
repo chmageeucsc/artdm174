@@ -15,32 +15,33 @@ function getCatPhoto()
   
   const url = `${API_URL}images/search`;
 
-  fetch(url,{headers: {
-    'x-api-key': API_KEY
-  }})
+  fetch(url)
   .then((response) => {
     return response.json();
   })
   .then((data) => {
+    console.log(data)
     currentCat = data[0];
     document.getElementById("catLogo").src= currentCat.url;
-    document.getElementById("catLogo").style.height = '120px';
-    document.getElementById("catLogo").style.width = '120';
   });
 
 }
 
-getCatPhoto()
-
 function getCatFax() {
   fetch(`https://meowfacts.herokuapp.com/`)
-    .then(response => {
-      return response.json()
+  .then(response => {
+    return response.json();
   })
   .then(data => 
-    document.getElementById("catFax").innerHTML = data[0]
+    // console.log(Object.values(data)[0])
+    document.getElementById("catFax").innerHTML = Object.values(data)[0]
   )
   .catch(error => console.log("ERROR"))
 }
 
+document.getElementById("button").onclick = function() {
+  window.location.reload();
+};
+
+getCatPhoto();
 getCatFax();
