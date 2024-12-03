@@ -2,7 +2,7 @@
 //
 // Student Name: Chantel Gee
 // Assignment Name: Lab 7: Fun with Remote APIs
-// Date: 11.30.2024
+// Date: 12.02.2024
 //
 
 const API_URL = `https://api.thecatapi.com/v1/`;
