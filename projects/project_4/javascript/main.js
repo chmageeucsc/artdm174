@@ -14,12 +14,27 @@ function getDeck() {
   .then(response => {
     return response.json();
   })
-  .then(data => 
-    // deckID = Object.values(data)[1]
-    console.log(Object.values(data)[1])
-    //document.getElementById("catFax").innerHTML = Object.values(data)[0]
+  .then(data => {
+      deckID = Object.values(data)[1];
+      console.log("first: " + deckID);
+
+      getCard(deckID)
+      // console.log(Object.values(data)[1])
+    }
   )
   .catch(error => console.log("ERROR"))
 }
 
 getDeck();
+
+function getCard(ID) {
+  fetch(drawCardURL1 + ID + drawCardURL2)
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+      console.log(data)
+    }
+  )
+  .catch(error => console.log("ERROR"))
+}
