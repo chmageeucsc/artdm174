@@ -11,5 +11,32 @@ Date: 12.09.2024
 
 /* TABLET SIZE AND BIGGER */
 @media only screen and (min-width : 700px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
 
+  #cards {
+    background-color: darkgreen;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10%;
+  }
+
+  #playerCard {
+    background-color: maroon;
+    border: 5px, solid, white;
+    display: inline-block;
+    height: 200px;
+    width: 125px;
+  }
+
+  #dealerCard {
+    background-color: navy;
+    border: 5px, solid, white;
+    display: inline-block;
+    height: 200px;
+    width: 125px;
+  }
 }
