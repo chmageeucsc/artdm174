@@ -18,7 +18,7 @@ function getDeck() {
       deckID = Object.values(data)[1];
       console.log("first: " + deckID);
 
-      getCard(deckID)
+      playGame(deckID)
       // console.log(Object.values(data)[1])
     }
   )
@@ -27,13 +27,21 @@ function getDeck() {
 
 getDeck();
 
+function playGame(ID) {
+  let playerHand = [];
+  let dealerHand = [];
+  getCard(ID);
+
+}
+
 function getCard(ID) {
   fetch(drawCardURL1 + ID + drawCardURL2)
   .then(response => {
     return response.json();
   })
   .then(data => {
-      console.log(data)
+      console.log(Object.values(data)[2][0].suit);
+      console.log(Object.values(data)[2][0].value);
     }
   )
   .catch(error => console.log("ERROR"))
