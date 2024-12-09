@@ -46,6 +46,7 @@ Date: 12.09.2024
 
   #dealerCard {
     background-color: navy;
+    background-size: 20%;
     border: 5px, solid, white;
     display: inline-block;
     height: 350px;
