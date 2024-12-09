@@ -28,6 +28,7 @@ async function shuffleDeck() {
 document.addEventListener("DOMContentLoaded", async () => {
   let deck = [];
   let playerHand = [];
+  let dealerHand = [];
 
   try {
       deck = await getDeck();
@@ -46,19 +47,27 @@ document.addEventListener("DOMContentLoaded", async () => {
   playerHand.push(Object.values(newCard)[2][0].value);
   await shuffleDeck();
   newCard = await getCard();
-  playerHand.push(Object.values(newCard)[2][0].value);
-  await shuffleDeck();
-  newCard = await getCard();
-  playerHand.push(Object.values(newCard)[2][0].value);
-  await shuffleDeck();
-  newCard = await getCard();
-  playerHand.push(Object.values(newCard)[2][0].value);
-  await shuffleDeck();
-  newCard = await getCard();
-  playerHand.push(Object.values(newCard)[2][0].value);
-  await shuffleDeck();
-  newCard = await getCard();
-  playerHand.push(Object.values(newCard)[2][0].value);
+  dealerHand.push(Object.values(newCard)[2][0].value);
+  
+  console.log(playerHand);
+  console.log(dealerHand);
 
-  console.log(playerHand)
+  if (playerHand == "ACE") {
+    console.log("p1!")
+  } else if (playerHand == "KING") {
+    console.log("p13!")
+  } else if (playerHand == "QUEEN") {
+    console.log("p12!")
+  } else if (playerHand == "JACK") {
+    console.log("p11!")
+  }
+  if (dealerHand == "ACE") {
+    console.log("d1!")
+  } else if (dealerHand == "KING") {
+    console.log("d13!")
+  } else if (dealerHand == "QUEEN") {
+    console.log("d12!")
+  } else if (dealerHand == "JACK") {
+    console.log("d11!")
+  }
 });
