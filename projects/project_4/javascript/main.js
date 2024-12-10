@@ -6,10 +6,11 @@
 //
 
 // temp deckID
-let deckID = '';
+var deckID = '';
 let drawCardURL1 = 'https://deckofcardsapi.com/api/deck/'
 let drawCardURL2 = '/draw/?count=1'
 
+var playerGuess = "NONE";
 
 async function getDeck() {
   return (await fetch("https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1")).json();
@@ -18,32 +19,11 @@ async function getDeck() {
 // to use new card
 // Object.values(newCard)[2][0].value
 async function getCard() {
-  return (await fetch(drawCardURL1 + deckID + drawCardURL2)).json();
+  return (await fetch("https://deckofcardsapi.com/api/deck/" + deckID + "/draw/?count=1")).json();
 }
 
 async function shuffleDeck() {
   return (await fetch("https://deckofcardsapi.com/api/deck/" + deckID + "/shuffle/?remaining=true ")).json();
-}
-
-const API_URL = `https://api.thecatapi.com/v1/`;
-const API_KEY = "DEMO-API-KEY";
-
-let currentCat;
-
-function getCatPhoto()
-{
-  
-  const url = `${API_URL}images/search`;
-
-  fetch(url)
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    currentCat = data[0];
-    document.getElementById("catLogo").style.backgroundImage = currentCat.url;
-  });
-
 }
 
 async function getPhoto() {
@@ -57,6 +37,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
       deck = await getDeck();
+      deckID = Object.values(deck)[1];
+
       newCard = await getCard();
       await shuffleDeck();
       photo = await getPhoto();
@@ -72,11 +54,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("playerCard").style.backgroundSize = "20%";
   // console.log(deck);
   // console.log(Object.values(deck)[1]);
-  deckID = Object.values(deck)[1];
   // console.log(deckID);
+
   newCard = await getCard();
   playerHand.push(Object.values(newCard)[2][0].value);
   await shuffleDeck();
+
   newCard = await getCard();
   dealerHand.push(Object.values(newCard)[2][0].value);
   // console.log(Object.values(newCard)[2][0].image)
@@ -86,9 +69,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   
   // console.log(playerHand);
   // console.log(dealerHand);
-
-  let playerValue = 0;
-  let dealerValue = 0;
 
   if (playerHand == "ACE") {
     playerValue = 1;
