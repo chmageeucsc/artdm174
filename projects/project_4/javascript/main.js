@@ -97,4 +97,25 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   // console.log("dealer value is: " + dealerValue);
+
+  const higherButton = document.getElementById("higherButton");
+  const lowerButton = document.getElementById("lowerButton");
+
+  // Add an event listener for the 'click' event
+  higherButton.addEventListener("click", function() {
+    // Code to execute when the button is clicked
+    playerGuess = "HIGHER";
+    console.log("high clicked!");
+    higherButton.disabled = true;
+    lowerButton.disabled = true;
+  });
+  // Add an event listener for the 'click' event
+  lowerButton.addEventListener("click", function() {
+    // Code to execute when the button is clicked
+    playerGuess = "LOWER";
+    console.log("low clicked!");
+    higherButton.disabled = true;
+    lowerButton.disabled = true;
+
+  });
 });
