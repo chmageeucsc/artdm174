@@ -26,6 +26,7 @@ Date: 12.09.2024
 
   #playerNames {
     display: flex;
+    font-size: 1.25em;
     justify-content: space-evenly;
   }
 
@@ -36,21 +37,12 @@ Date: 12.09.2024
     padding: 2%;
   }
 
-  #playerCard {
-    background-color: maroon;
-    border: 5px, solid, white;
+  #playerCard, #dealerCard {
+    border: solid 5px black;
+    border-radius: 7%;
     display: inline-block;
-    height: 350px;
-    width: 250px;
-  }
-
-  #dealerCard {
-    background-color: navy;
-    background-size: 20%;
-    border: 5px, solid, white;
-    display: inline-block;
-    height: 350px;
-    width: 250px;
+    height: 314px;
+    width: 226px;
   }
 
   #buttons {
@@ -69,5 +61,10 @@ Date: 12.09.2024
 
   button:hover {
     cursor: pointer;
+  }
+
+  footer {
+    text-align: center;
+    
   }
 }

@@ -67,8 +67,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   photoURL = photo[0].url;
-  console.log(photoURL);
-  document.getElementById("dealerCard").style.backgroundImage = "url('" + photoURL + "')";
+  // console.log(photoURL);
+  document.getElementById("playerCard").style.backgroundImage = "url('" + photoURL + "')";
+  document.getElementById("playerCard").style.backgroundSize = "20%";
   // console.log(deck);
   // console.log(Object.values(deck)[1]);
   deckID = Object.values(deck)[1];
@@ -78,26 +79,42 @@ document.addEventListener("DOMContentLoaded", async () => {
   await shuffleDeck();
   newCard = await getCard();
   dealerHand.push(Object.values(newCard)[2][0].value);
+  // console.log(Object.values(newCard)[2][0].image)
+  let dealerCard = Object.values(newCard)[2][0].image;
+
+  document.getElementById("dealerCard").style.backgroundImage = "url('" + dealerCard + "')";
   
   // console.log(playerHand);
   // console.log(dealerHand);
 
-  // if (playerHand == "ACE") {
-  //   console.log("p1!")
-  // } else if (playerHand == "KING") {
-  //   console.log("p13!")
-  // } else if (playerHand == "QUEEN") {
-  //   console.log("p12!")
-  // } else if (playerHand == "JACK") {
-  //   console.log("p11!")
-  // }
-  // if (dealerHand == "ACE") {
-  //   console.log("d1!")
-  // } else if (dealerHand == "KING") {
-  //   console.log("d13!")
-  // } else if (dealerHand == "QUEEN") {
-  //   console.log("d12!")
-  // } else if (dealerHand == "JACK") {
-  //   console.log("d11!")
-  // }
+  let playerValue = 0;
+  let dealerValue = 0;
+
+  if (playerHand == "ACE") {
+    playerValue = 1;
+  } else if (playerHand == "KING") {
+    playerValue = 13;
+  } else if (playerHand == "QUEEN") {
+    playerValue = 12;
+  } else if (playerHand == "JACK") {
+    playerValue = 11;
+  } else {
+    playerValue = playerHand;
+  }
+
+  // console.log("player value is: " + playerValue);
+
+  if (dealerHand == "ACE") {
+    dealerValue = 1;
+  } else if (dealerHand == "KING") {
+    dealerValue = 13;
+  } else if (dealerHand == "QUEEN") {
+    dealerValue = 12;
+  } else if (dealerHand == "JACK") {
+    dealerValue = 11;
+  } else {
+    dealerValue = dealerHand;
+  }
+
+  // console.log("dealer value is: " + dealerValue);
 });
