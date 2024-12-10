@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Code to execute when the button is clicked
     playerGuess = "HIGHER";
     console.log("high clicked!");
+    higherButton.style.backgroundColor = "lightblue";
     higherButton.disabled = true;
     lowerButton.disabled = true;
   });
@@ -114,6 +115,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Code to execute when the button is clicked
     playerGuess = "LOWER";
     console.log("low clicked!");
+    lowerButton.style.backgroundColor = "lightblue";
     higherButton.disabled = true;
     lowerButton.disabled = true;
 
