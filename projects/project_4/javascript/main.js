@@ -50,20 +50,30 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   photoURL = photo[0].url;
   // console.log(photoURL);
-  document.getElementById("playerCard").style.backgroundImage = "url('" + photoURL + "')";
-  document.getElementById("playerCard").style.backgroundSize = "20%";
+
+  document.getElementById("playerCardBack").style.backgroundImage = "url('" + photoURL + "')";
+  document.getElementById("playerCardBack").style.backgroundSize = "20%";
+
   // console.log(deck);
   // console.log(Object.values(deck)[1]);
   // console.log(deckID);
 
   newCard = await getCard();
   playerHand.push(Object.values(newCard)[2][0].value);
+
+  let playerCard = Object.values(newCard)[2][0].image;
+  console.log("player card value: " + playerCard);
+
+  document.getElementById("playerCardFront").style.backgroundImage = "url('" + playerCard + "')";
+
   await shuffleDeck();
 
   newCard = await getCard();
   dealerHand.push(Object.values(newCard)[2][0].value);
   // console.log(Object.values(newCard)[2][0].image)
   let dealerCard = Object.values(newCard)[2][0].image;
+  console.log("dealer card value: " + dealerCard);
+
 
   document.getElementById("dealerCard").style.backgroundImage = "url('" + dealerCard + "')";
   

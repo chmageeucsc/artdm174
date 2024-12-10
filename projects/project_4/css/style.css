@@ -45,6 +45,23 @@ Date: 12.09.2024
     width: 226px;
   }
 
+  #playerCard #playerCardBack {
+    background-image: none;
+  }
+
+  #playerCard #playerCardFront {
+    background-image: none;
+  }
+
+  #playerCardFront, #playerCardBack {
+    backface-visibility: hidden;
+    border-radius: 7%;
+    height: 314px;
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    width: 226px;
+  }
+
   #buttons {
     display: flex;
     justify-content: space-evenly;
