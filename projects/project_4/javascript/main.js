@@ -114,6 +114,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const higherButton = document.getElementById("higherButton");
   const lowerButton = document.getElementById("lowerButton");
+  const gameText = document.getElementById("gameText");
 
   // Add an event listener for the 'click' event
   higherButton.addEventListener("click", function() {
@@ -129,15 +130,15 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (playerValue > dealerValue) {
         wins += 1;
         localStorage.setItem('wins', wins);
-        console.log("YOU WIN! " + playerValue + " is higher than " + dealerValue);
+        gameText.textContent = "YOU WIN! " + playerValue + " is HIGHER than " + dealerValue + ".";
       } else if (playerValue == dealerValue) {
         ties += 1;
         localStorage.setItem('ties', ties);
-        console.log("No one wins. " + playerValue + " is not higher or lower than " + dealerValue);
+        gameText.textContent = "IT'S A TIE! " + playerValue + " is not HIGHER or LOWER than " + dealerValue + ".";
       } else {
         losses += 1;
         localStorage.setItem('losses', losses);
-        console.log("YOU LOSE! " + playerValue + " is lower than " + dealerValue);
+        gameText.textContent = "YOU LOSE! " + playerValue + " is LOWER than " + dealerValue + ".";
       }
     }
   });
@@ -154,16 +155,18 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (playerValue > dealerValue) {
         losses += 1;
         localStorage.setItem('losses', losses);
-        console.log("YOU LOSE! " + playerValue + " is higher than " + dealerValue);
+        gameText.textContent = "YOU LOSE! " + playerValue + " is HIGHER than " + dealerValue + ".";
       } else if (playerValue == dealerValue) {
         ties += 1;
         localStorage.setItem('ties', ties);
-        console.log("No one wins. " + playerValue + " is not higher or lower than " + dealerValue);
+        gameText.textContent = "IT'S A TIE! " + playerValue + " is not HIGHER or LOWER than " + dealerValue + ".";
       } else {
         wins += 1;
         localStorage.setItem('wins', wins);
-        console.log("YOU WIN! " + playerValue + " is lower than " + dealerValue);
+        gameText.textContent = "YOU WIN! " + playerValue + " is LOWER than " + dealerValue + ".";
       }
     }
   });
+  gameText.style.fontSize = "x-large";
+
 });
