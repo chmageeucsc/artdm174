@@ -1,7 +1,7 @@
 /* 
 Student Name: Chantel Gee
 Assignment Name: Project 4: Web App
-Date: 12.09.2024 
+Date: 12.10.2024 
 */
 
 /* MOBILE SIZE */
@@ -38,11 +38,22 @@ Date: 12.09.2024
   }
 
   #playerCard, #dealerCard {
+    background-color: transparent;
     border: solid 5px black;
     border-radius: 7%;
     display: inline-block;
     height: 314px;
+    perspective: 1000px;
     width: 226px;
+  }
+
+  #playerCardInner {
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+  }
+
+  .flipped {
+    transform: rotateY(180deg);
   }
 
   #playerCardFront, #playerCardBack {
@@ -52,6 +63,10 @@ Date: 12.09.2024
     position: absolute;
     -webkit-backface-visibility: hidden; /* Safari */
     width: 226px;
+  }
+
+  #playerCardFront {
+    transform: rotateY(180deg);
   }
 
   #buttons {

@@ -2,7 +2,7 @@
 //
 // Student Name: Chantel Gee
 // Assignment Name: Project 4: Web App
-// Date: 12.09.2024
+// Date: 12.10.2024
 //
 
 // temp deckID
@@ -49,20 +49,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   photoURL = photo[0].url;
-  // console.log(photoURL);
 
   document.getElementById("playerCardBack").style.backgroundImage = "url('" + photoURL + "')";
   document.getElementById("playerCardBack").style.backgroundSize = "20%";
-
-  // console.log(deck);
-  // console.log(Object.values(deck)[1]);
-  // console.log(deckID);
 
   newCard = await getCard();
   playerHand.push(Object.values(newCard)[2][0].value);
 
   let playerCard = Object.values(newCard)[2][0].image;
-  console.log("player card value: " + playerCard);
 
   document.getElementById("playerCardFront").style.backgroundImage = "url('" + playerCard + "')";
 
@@ -70,15 +64,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   newCard = await getCard();
   dealerHand.push(Object.values(newCard)[2][0].value);
-  // console.log(Object.values(newCard)[2][0].image)
   let dealerCard = Object.values(newCard)[2][0].image;
-  console.log("dealer card value: " + dealerCard);
-
 
   document.getElementById("dealerCard").style.backgroundImage = "url('" + dealerCard + "')";
-  
-  // console.log(playerHand);
-  // console.log(dealerHand);
 
   if (playerHand == "ACE") {
     playerValue = 1;
@@ -91,8 +79,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   } else {
     playerValue = playerHand;
   }
-
-  // console.log("player value is: " + playerValue);
 
   if (dealerHand == "ACE") {
     dealerValue = 1;
@@ -115,7 +101,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   higherButton.addEventListener("click", function() {
     // Code to execute when the button is clicked
     playerGuess = "HIGHER";
-    console.log("high clicked!");
+    document.getElementById("playerCardInner").classList.toggle("flipped")
     higherButton.style.backgroundColor = "lightblue";
     higherButton.disabled = true;
     lowerButton.disabled = true;
@@ -124,7 +110,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (playerValue > dealerValue) {
         console.log("YOU WIN! " + playerValue + " is higher than " + dealerValue);
       } else if (playerValue == dealerValue) {
-        console.log("No one wins. " + playeplayerValuerHand + " is not higher or lower than " + dealerValue);
+        console.log("No one wins. " + playerValue + " is not higher or lower than " + dealerValue);
       } else {
         console.log("YOU LOSE! " + playerValue + " is lower than " + dealerValue);
       }
@@ -134,7 +120,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   lowerButton.addEventListener("click", function() {
     // Code to execute when the button is clicked
     playerGuess = "LOWER";
-    console.log("low clicked!");
+    document.getElementById("playerCardInner").classList.toggle("flipped")
     lowerButton.style.backgroundColor = "lightblue";
     higherButton.disabled = true;
     lowerButton.disabled = true;
