@@ -119,6 +119,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     higherButton.style.backgroundColor = "lightblue";
     higherButton.disabled = true;
     lowerButton.disabled = true;
+
+    if (playerGuess == "HIGHER") {
+      if (playerValue > dealerValue) {
+        console.log("YOU WIN! " + playerValue + " is higher than " + dealerValue);
+      } else if (playerValue == dealerValue) {
+        console.log("No one wins. " + playeplayerValuerHand + " is not higher or lower than " + dealerValue);
+      } else {
+        console.log("YOU LOSE! " + playerValue + " is lower than " + dealerValue);
+      }
+    }
   });
   // Add an event listener for the 'click' event
   lowerButton.addEventListener("click", function() {
@@ -129,5 +139,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     higherButton.disabled = true;
     lowerButton.disabled = true;
 
+    if (playerGuess == "LOWER") {
+      if (playerValue > dealerValue) {
+        console.log("YOU LOSE! " + playerValue + " is higher than " + dealerValue);
+      } else if (playerValue == dealerValue) {
+        console.log("No one wins. " + playerValue + " is not higher or lower than " + dealerValue);
+      } else {
+        console.log("YOU WIN! " + playerValue + " is lower than " + dealerValue);
+      }
+    }
   });
 });
