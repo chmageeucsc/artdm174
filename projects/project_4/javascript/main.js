@@ -5,6 +5,24 @@
 // Date: 12.10.2024
 //
 
+var wins = 0;
+var ties = 0;
+var losses = 0;
+
+if (localStorage.getItem('wins') != null) {
+  wins = +localStorage.getItem('wins');
+}
+if (localStorage.getItem('ties') != null) {
+  ties = +localStorage.getItem('ties');
+}
+if (localStorage.getItem('losses') != null) {
+  losses = +localStorage.getItem('losses');
+}
+
+console.log("number of wins is: " + wins);
+console.log("number of ties is: " + ties);
+console.log("number of losses is: " + losses);
+
 // temp deckID
 var deckID = '';
 let drawCardURL1 = 'https://deckofcardsapi.com/api/deck/'
@@ -77,7 +95,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   } else if (playerHand == "JACK") {
     playerValue = 11;
   } else {
-    playerValue = playerHand;
+    playerValue = +playerHand;
   }
 
   if (dealerHand == "ACE") {
@@ -89,7 +107,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   } else if (dealerHand == "JACK") {
     dealerValue = 11;
   } else {
-    dealerValue = dealerHand;
+    dealerValue = +dealerHand;
   }
 
   // console.log("dealer value is: " + dealerValue);
@@ -107,11 +125,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     lowerButton.disabled = true;
 
     if (playerGuess == "HIGHER") {
+      
       if (playerValue > dealerValue) {
+        wins += 1;
+        localStorage.setItem('wins', wins);
         console.log("YOU WIN! " + playerValue + " is higher than " + dealerValue);
       } else if (playerValue == dealerValue) {
+        ties += 1;
+        localStorage.setItem('ties', ties);
         console.log("No one wins. " + playerValue + " is not higher or lower than " + dealerValue);
       } else {
+        losses += 1;
+        localStorage.setItem('losses', losses);
         console.log("YOU LOSE! " + playerValue + " is lower than " + dealerValue);
       }
     }
@@ -127,10 +152,16 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (playerGuess == "LOWER") {
       if (playerValue > dealerValue) {
+        losses += 1;
+        localStorage.setItem('losses', losses);
         console.log("YOU LOSE! " + playerValue + " is higher than " + dealerValue);
       } else if (playerValue == dealerValue) {
+        ties += 1;
+        localStorage.setItem('ties', ties);
         console.log("No one wins. " + playerValue + " is not higher or lower than " + dealerValue);
       } else {
+        wins += 1;
+        localStorage.setItem('wins', wins);
         console.log("YOU WIN! " + playerValue + " is lower than " + dealerValue);
       }
     }
