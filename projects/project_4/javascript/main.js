@@ -188,7 +188,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     }
   });
-  gameText.style.fontSize = "x-large";
 
   replayButton.onclick = function() {
     window.location.reload();

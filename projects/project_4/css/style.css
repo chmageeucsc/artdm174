@@ -6,13 +6,104 @@ Date: 12.10.2024
 
 /* MOBILE SIZE */
 @media only screen and (max-width : 700px) {
+  body {
+    background-color: antiquewhite;
+    margin: 0;
+  }
 
+  header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  main {
+    background-color: darkgreen;
+  }
+
+  #playerNames {
+    display: flex;
+    font-size: .85em;
+    justify-content: space-evenly;
+  }
+
+  #cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 2%;
+  }
+
+  #playerCard, #dealerCard {
+    background-color: transparent;
+    background-size: 200px 270px;
+    border: solid 5px black;
+    border-radius: 7%;
+    display: inline-block;
+    height: 270px;
+    perspective: 1000px;
+    width: 200px;
+  }
+
+  #playerCardInner {
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+  }
+
+  .flipped {
+    transform: rotateY(180deg);
+  }
+
+  #playerCardFront, #playerCardBack {
+    backface-visibility: hidden;
+    background-size: 200px 270px;
+    border-radius: 7%;
+    height: 270px;
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    width: 200px;
+  }
+
+  #playerCardFront {
+    transform: rotateY(180deg);
+  }
+
+  #buttons, #hiddenButton {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 15% 3%;
+  }
+
+  #buttons p, #buttons button, #hiddenButton button {
+    font-size: 1em;
+  }
+
+  button {
+    padding: 2%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  footer {
+    text-align: center;
+    
+  }
+
+  #gameText {
+    font-size: larger;
+  }
 }
 
 /* TABLET SIZE AND BIGGER */
 @media only screen and (min-width : 700px) {
   body {
     background-color: antiquewhite;
+    margin: 0;
   }
 
   header {
@@ -34,7 +125,7 @@ Date: 12.10.2024
     display: flex;
     justify-content: space-evenly;
     margin: auto;
-    padding: 2%;
+    padding: 0 0 4%;
   }
 
   #playerCard, #dealerCard {
@@ -94,5 +185,9 @@ Date: 12.10.2024
   footer {
     text-align: center;
     
+  }
+
+  #gameText {
+    font-size: x-large;
   }
 }
