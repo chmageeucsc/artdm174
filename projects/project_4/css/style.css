@@ -22,6 +22,7 @@ Date: 12.11.2024
 
   main {
     background-color: darkgreen;
+    background-image: url("https://media.istockphoto.com/id/696973922/vector/seamless-pattern-with-playing-card-suits-on-green-background.jpg?s=612x612&w=0&k=20&c=dkSrsrwR1z2YagTDG5FPK9zMV0zSYQOnrX5nKJ0NCUE=")
   }
 
   #playerNames {
@@ -122,9 +123,11 @@ Date: 12.11.2024
 
   main {
     background-color: darkgreen;
+    background-image: url("https://media.istockphoto.com/id/696973922/vector/seamless-pattern-with-playing-card-suits-on-green-background.jpg?s=612x612&w=0&k=20&c=dkSrsrwR1z2YagTDG5FPK9zMV0zSYQOnrX5nKJ0NCUE=")
   }
 
   #playerNames {
+    color: whitesmoke;
     display: flex;
     font-size: 1.25em;
     justify-content: space-evenly;
@@ -185,7 +188,9 @@ Date: 12.11.2024
   }
 
   #buttons p, #buttons button, #hiddenButton button {
+    font-family:'Courier New', Courier, monospace;
     font-size: 1.25em;
+    font-weight: bold;
   }
 
   button {
@@ -193,6 +198,7 @@ Date: 12.11.2024
   }
 
   button:hover {
+    background-color: rgb(241, 163, 163);
     cursor: pointer;
   }
 
