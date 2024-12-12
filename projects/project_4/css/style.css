@@ -69,13 +69,13 @@ Date: 12.10.2024
     transform: rotateY(180deg);
   }
 
-  #buttons {
+  #buttons, #hiddenButton {
     display: flex;
     justify-content: space-evenly;
     padding: 0 15% 5%;
   }
 
-  #buttons p, #buttons button {
+  #buttons p, #buttons button, #hiddenButton button {
     font-size: 1.25em;
   }
 
@@ -85,6 +85,10 @@ Date: 12.10.2024
 
   button:hover {
     cursor: pointer;
+  }
+
+  .hide {
+    display: none;
   }
 
   footer {

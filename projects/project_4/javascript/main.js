@@ -121,6 +121,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   const winsText = document.getElementById("winsText");
   const tiesText = document.getElementById("tiesText");
   const lossesText = document.getElementById("lossesText");
+  const gameButtons = document.getElementsByClassName("gameButtons");
+  const replayButton = document.getElementById("replayButton");
+
 
   // Add an event listener for the 'click' event
   higherButton.addEventListener("click", function() {
@@ -148,6 +151,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         localStorage.setItem('losses', losses);
         lossesText.textContent = "LOSSES: " + localStorage.getItem('losses');
         gameText.textContent = "YOU LOSE! " + playerValue + " is LOWER than " + dealerValue + ".";
+      }
+      for (let i = 0; i < gameButtons.length; i++) {
+        gameButtons[i].classList.toggle("hide");
       }
     }
   });
@@ -177,8 +183,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         winsText.textContent = "WINS: " + localStorage.getItem('wins');
         gameText.textContent = "YOU WIN! " + playerValue + " is LOWER than " + dealerValue + ".";
       }
+      for (let i = 0; i < gameButtons.length; i++) {
+        gameButtons[i].classList.toggle("hide");
+      }
     }
   });
   gameText.style.fontSize = "x-large";
 
+  replayButton.onclick = function() {
+    window.location.reload();
+  };
 });
