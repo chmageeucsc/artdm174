@@ -1,7 +1,7 @@
 /* 
 Student Name: Chantel Gee
 Assignment Name: Project 4: Web App
-Date: 12.10.2024 
+Date: 12.11.2024 
 */
 
 /* MOBILE SIZE */
@@ -69,6 +69,15 @@ Date: 12.10.2024
 
   #playerCardFront {
     transform: rotateY(180deg);
+  }
+
+  #playerCardBack {
+    background-image: url("https://deckofcardsapi.com/static/img/back.png");
+  }
+
+  #dealerCard {
+    background-image: url("https://i.etsystatic.com/25989457/r/il/ddd2e5/2843376330/il_570xN.2843376330_jtas.jpg");
+    background-size: cover;
   }
 
   #buttons, #hiddenButton {
@@ -158,6 +167,15 @@ Date: 12.10.2024
 
   #playerCardFront {
     transform: rotateY(180deg);
+  }
+  
+  #playerCardBack {
+    background-image: url("https://deckofcardsapi.com/static/img/back.png");
+  }
+
+  #dealerCard {
+    background-image: url("https://i.etsystatic.com/25989457/r/il/ddd2e5/2843376330/il_570xN.2843376330_jtas.jpg");
+    background-size: cover;
   }
 
   #buttons, #hiddenButton {

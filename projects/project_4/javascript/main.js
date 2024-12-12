@@ -2,7 +2,7 @@
 //
 // Student Name: Chantel Gee
 // Assignment Name: Project 4: Web App
-// Date: 12.10.2024
+// Date: 12.11.2024
 //
 
 var wins = 0;
