@@ -2,7 +2,7 @@
 
 Student Name: Chantel Gee
 Assignment Name: Project 4: Web App
-Date: 12.09.2024
+Date: 12.11.2024
 
 --> 
 
@@ -18,10 +18,37 @@ Date: 12.09.2024
 </head>
 <body>
   <header>
-		
+		<h1 id="winsText">WINS: 0</h1>
+		<h1 id="tiesText">TIES: 0</h1>
+		<h1 id="lossesText">LOSSES: 0</h1>
 	</header>
 
 	<main>
+    <div id="playerNames">
+      <h2>PLAYER</h2>
+      <h2>DEALER</h2>
+    </div>
+    <div id="cards">
+      <div id="playerCard">
+        <div id="playerCardInner">
+          <div id="playerCardBack"></div>
+          <div id="playerCardFront"></div>
+        </div>
+      </div>
+      <div id="dealerCard"></div>
+    </div>
+    <div id="buttons">
+      <button class="gameButtons" id="higherButton">HIGHER</button>
+      <p class="gameButtons">or</p>
+      <button class="gameButtons" id="lowerButton">LOWER</button>
+      <button class="hide gameButtons" id="replayButton">Play again?</button>
+    </div>
+  </main>
+
+  <footer>
+    <p id="gameText">Is the Player's card <strong>HIGHER</strong> or <strong>LOWER</strong> than the Dealer's card?</p>
+    <p><em>(In this game, <strong>ACE</strong> is the lowest card in the deck.)</em></p>
+  </footer>
 		
 </body>
 </html>

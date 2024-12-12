@@ -1,15 +1,217 @@
 /* 
 Student Name: Chantel Gee
 Assignment Name: Project 4: Web App
-Date: 12.09.2024 
+Date: 12.11.2024 
 */
 
 /* MOBILE SIZE */
 @media only screen and (max-width : 700px) {
+  body {
+    background-color: antiquewhite;
+    margin: 0;
+  }
 
+  header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  main {
+    background-color: darkgreen;
+    background-image: url("https://media.istockphoto.com/id/696973922/vector/seamless-pattern-with-playing-card-suits-on-green-background.jpg?s=612x612&w=0&k=20&c=dkSrsrwR1z2YagTDG5FPK9zMV0zSYQOnrX5nKJ0NCUE=")
+  }
+
+  #playerNames {
+    display: flex;
+    font-size: .85em;
+    justify-content: space-evenly;
+  }
+
+  #cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 2%;
+  }
+
+  #playerCard, #dealerCard {
+    background-color: transparent;
+    background-size: 200px 270px;
+    border: solid 5px black;
+    border-radius: 7%;
+    display: inline-block;
+    height: 270px;
+    perspective: 1000px;
+    width: 200px;
+  }
+
+  #playerCardInner {
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+  }
+
+  .flipped {
+    transform: rotateY(180deg);
+  }
+
+  #playerCardFront, #playerCardBack {
+    backface-visibility: hidden;
+    background-size: 200px 270px;
+    border-radius: 7%;
+    height: 270px;
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    width: 200px;
+  }
+
+  #playerCardFront {
+    transform: rotateY(180deg);
+  }
+
+  #playerCardBack {
+    background-image: url("https://deckofcardsapi.com/static/img/back.png");
+  }
+
+  #dealerCard {
+    background-image: url("https://i.etsystatic.com/25989457/r/il/ddd2e5/2843376330/il_570xN.2843376330_jtas.jpg");
+    background-size: cover;
+  }
+
+  #buttons, #hiddenButton {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 15% 3%;
+  }
+
+  #buttons p, #buttons button, #hiddenButton button {
+    font-size: 1em;
+  }
+
+  button {
+    padding: 2%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  footer {
+    text-align: center;
+    
+  }
+
+  #gameText {
+    font-size: larger;
+  }
 }
 
 /* TABLET SIZE AND BIGGER */
 @media only screen and (min-width : 700px) {
+  body {
+    background-color: antiquewhite;
+    margin: 0;
+  }
 
+  header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  main {
+    background-color: darkgreen;
+    background-image: url("https://media.istockphoto.com/id/696973922/vector/seamless-pattern-with-playing-card-suits-on-green-background.jpg?s=612x612&w=0&k=20&c=dkSrsrwR1z2YagTDG5FPK9zMV0zSYQOnrX5nKJ0NCUE=")
+  }
+
+  #playerNames {
+    color: whitesmoke;
+    display: flex;
+    font-size: 1.25em;
+    justify-content: space-evenly;
+  }
+
+  #cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 0 0 4%;
+  }
+
+  #playerCard, #dealerCard {
+    background-color: transparent;
+    border: solid 5px black;
+    border-radius: 7%;
+    display: inline-block;
+    height: 314px;
+    perspective: 1000px;
+    width: 226px;
+  }
+
+  #playerCardInner {
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+  }
+
+  .flipped {
+    transform: rotateY(180deg);
+  }
+
+  #playerCardFront, #playerCardBack {
+    backface-visibility: hidden;
+    border-radius: 7%;
+    height: 314px;
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    width: 226px;
+  }
+
+  #playerCardFront {
+    transform: rotateY(180deg);
+  }
+  
+  #playerCardBack {
+    background-image: url("https://deckofcardsapi.com/static/img/back.png");
+  }
+
+  #dealerCard {
+    background-image: url("https://i.etsystatic.com/25989457/r/il/ddd2e5/2843376330/il_570xN.2843376330_jtas.jpg");
+    background-size: cover;
+  }
+
+  #buttons, #hiddenButton {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 15% 5%;
+  }
+
+  #buttons p, #buttons button, #hiddenButton button {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+
+  button {
+    padding: 2%;
+  }
+
+  button:hover {
+    background-color: rgb(241, 163, 163);
+    cursor: pointer;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  footer {
+    text-align: center;
+    
+  }
+
+  #gameText {
+    font-size: x-large;
+  }
 }
