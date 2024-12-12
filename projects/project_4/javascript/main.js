@@ -140,17 +140,17 @@ document.addEventListener("DOMContentLoaded", async () => {
         wins += 1;
         localStorage.setItem('wins', wins);
         winsText.textContent = "WINS: " + localStorage.getItem('wins');
-        gameText.textContent = "YOU WIN! " + playerValue + " is HIGHER than " + dealerValue + ".";
+        gameText.textContent = "YOU WIN! " + playerHand + " is HIGHER than " + dealerHand + ".";
       } else if (playerValue == dealerValue) {
         ties += 1;
         localStorage.setItem('ties', ties);
         tiesText.textContent = "TIES: " + localStorage.getItem('ties');
-        gameText.textContent = "IT'S A TIE! " + playerValue + " is not HIGHER or LOWER than " + dealerValue + ".";
+        gameText.textContent = "IT'S A TIE! " + playerHand + " is not HIGHER or LOWER than " + dealerHand + ".";
       } else {
         losses += 1;
         localStorage.setItem('losses', losses);
         lossesText.textContent = "LOSSES: " + localStorage.getItem('losses');
-        gameText.textContent = "YOU LOSE! " + playerValue + " is LOWER than " + dealerValue + ".";
+        gameText.textContent = "YOU LOSE! " + playerHand + " is LOWER than " + dealerHand + ".";
       }
       for (let i = 0; i < gameButtons.length; i++) {
         gameButtons[i].classList.toggle("hide");
@@ -171,17 +171,17 @@ document.addEventListener("DOMContentLoaded", async () => {
         losses += 1;
         localStorage.setItem('losses', losses);
         lossesText.textContent = "LOSSES: " + localStorage.getItem('losses');
-        gameText.textContent = "YOU LOSE! " + playerValue + " is HIGHER than " + dealerValue + ".";
+        gameText.textContent = "YOU LOSE! " + playerHand + " is HIGHER than " + dealerHand + ".";
       } else if (playerValue == dealerValue) {
         ties += 1;
         localStorage.setItem('ties', ties);
         tiesText.textContent = "TIES: " + localStorage.getItem('ties');
-        gameText.textContent = "IT'S A TIE! " + playerValue + " is not HIGHER or LOWER than " + dealerValue + ".";
+        gameText.textContent = "IT'S A TIE! " + playerHand + " is not HIGHER or LOWER than " + dealerHand + ".";
       } else {
         wins += 1;
         localStorage.setItem('wins', wins);
         winsText.textContent = "WINS: " + localStorage.getItem('wins');
-        gameText.textContent = "YOU WIN! " + playerValue + " is LOWER than " + dealerValue + ".";
+        gameText.textContent = "YOU WIN! " + playerHand + " is LOWER than " + dealerHand + ".";
       }
       for (let i = 0; i < gameButtons.length; i++) {
         gameButtons[i].classList.toggle("hide");
