@@ -9,6 +9,7 @@ var wins = 0;
 var ties = 0;
 var losses = 0;
 
+// updated wins, ties, and losses based on localStorage data
 if (localStorage.getItem('wins') != null) {
   wins = +localStorage.getItem('wins');
   winsText.textContent = "WINS: " + wins;
@@ -22,11 +23,6 @@ if (localStorage.getItem('losses') != null) {
 
 }
 
-console.log("number of wins is: " + wins);
-console.log("number of ties is: " + ties);
-console.log("number of losses is: " + losses);
-
-// temp deckID
 var deckID = '';
 let drawCardURL1 = 'https://deckofcardsapi.com/api/deck/'
 let drawCardURL2 = '/draw/?count=1'
