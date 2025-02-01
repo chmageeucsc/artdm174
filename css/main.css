@@ -13,6 +13,21 @@ body {
   width: 80%
 }
 
+.hide {
+  display: none;
+}
+
+.classes { 
+  color: rgb(33, 77, 172);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  padding: 0 1%;
+  text-decoration: underline;
+}
+
+.classes:hover {
+  cursor: pointer;
+}
+
 /*the following rule makes the header text blue, changes the font to Georgia, and centers the text*/
 header {
   align-items: center;
